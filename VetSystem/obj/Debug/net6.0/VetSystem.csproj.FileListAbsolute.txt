@@ -71,3 +71,4 @@ C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\refint\Ve
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.pdb
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.genruntimeconfig.cache
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\ref\VetSystem.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.MvcApplicationPartsAssemblyInfo.cs

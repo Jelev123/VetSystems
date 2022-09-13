@@ -9,11 +9,11 @@ using VetSystem.Infrastructure.Data;
 
 #nullable disable
 
-namespace VetSystem.Infrastructure.Data.Migrations
+namespace VetSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220913113546_createDB")]
-    partial class createDB
+    [Migration("20220913134142_createDB2")]
+    partial class createDB2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

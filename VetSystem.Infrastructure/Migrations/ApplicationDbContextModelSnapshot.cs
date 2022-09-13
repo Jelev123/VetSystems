@@ -8,7 +8,7 @@ using VetSystem.Infrastructure.Data;
 
 #nullable disable
 
-namespace VetSystem.Infrastructure.Data.Migrations
+namespace VetSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
