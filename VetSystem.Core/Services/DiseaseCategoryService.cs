@@ -2,25 +2,24 @@
 {
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
-    using VetSystem.Core.ViewModels.Disiese;
+    using VetSystem.Core.ViewModels.DiseaseCategory;
     using VetSystem.Infrastructure.Data;
     using VetSystem.Infrastucture.Data.Models;
 
-    public class DisieseService : IDisieseService
+    public class DiseaseCategoryService : IDiseaseCategoryService
     {
         private readonly ApplicationDbContext data;
 
-        public DisieseService(ApplicationDbContext data)
+        public DiseaseCategoryService(ApplicationDbContext data)
         {
             this.data = data;
         }
 
-        public async Task AddDisiese(AddDisieseViewModel add)
+        public async Task Add(AddDiseaseCategoryViewModel add)
         {
-            var disease = new Disease
+            var disease = new DiseaseCategory
             {
                 Name = add.Name,
-                DiseaseCategoryId  = add.DiseaseCategoryId,
             };
 
             data.Add(disease);

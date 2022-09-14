@@ -1,14 +1,10 @@
-﻿@using VetSystem.Core.ViewModels.Disiese
-@model AddDisieseViewModel
+﻿@using VetSystem.Core.ViewModels.DiseaseCategory
+@model AddDiseaseCategoryViewModel
 
 <form method="post">
     <div class="form-group">
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="DiseaseCategoryId"></label>
-        <input asp-for="DiseaseCategoryId" class="form-control" />
     </div>
     <input class="btn text-black btn-info text-center " type="submit" value="Add" />
 </form>

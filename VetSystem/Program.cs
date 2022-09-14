@@ -20,6 +20,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IAnimalService, AnimalService>();
 builder.Services.AddTransient<IBreedService, BreedService>();
 builder.Services.AddTransient<IDisieseService, DisieseService>();
+builder.Services.AddTransient<IDiseaseCategoryService, DiseaseCategoryService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
