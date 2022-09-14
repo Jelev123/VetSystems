@@ -3,6 +3,7 @@
     using Microsoft.AspNetCore.Mvc;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels;
+    using VetSystem.Core.ViewModels.Breed;
 
     public class BreedController : Controller
     {
@@ -25,6 +26,12 @@
             this.breedService.AddBreed(addBreed);
 
             return this.Redirect("/");
+        }
+
+        public IActionResult AllBreeds()
+        {
+            var all = this.breedService.AllBreeds<AllBreedsViewModel>();
+            return this.View(all);
         }
     }
 }

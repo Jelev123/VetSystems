@@ -2,7 +2,7 @@
 @using VetSystem.Infrastructure.Data
 @model AddAnimalViewModel
 
-
+<div class="row">
 <form method="post">
     <div class="form-group">
         <label asp-for="Name"></label>
@@ -21,10 +21,9 @@
         <input asp-for="OwnerId" class="form-control" />
 
     </div>
-    <div>
-        <label asp-for="BreedId"></label>
-        <input asp-for="BreedId" class="form-control" />
-
+    <div class="row">
+        @Html.DisplayNameFor(s => s.BreedId)
+        @Html.DropDownListFor(s => s.BreedId, new SelectList(Model.BreedName))
     </div>
     
     <div class="form-group">
@@ -34,3 +33,4 @@
 
     <input class="btn text-black btn-info text-center " type="submit" value="Add" />
 </form>
+    </div>

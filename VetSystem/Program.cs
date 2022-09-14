@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using VetSystem.Core.Contracts;
@@ -18,6 +19,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IAnimalService, AnimalService>();
 builder.Services.AddTransient<IBreedService, BreedService>();
+builder.Services.AddTransient<IDisieseService, DisieseService>();
+
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 

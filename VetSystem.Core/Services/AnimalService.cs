@@ -17,16 +17,15 @@
 
         public async Task AddAnimal(AddAnimalViewModel addAnimal)
         {
-            var animal = new Animal
-            {
-                Name = addAnimal.Name,
-                Age = addAnimal.Age,
-                Kilograms = addAnimal.Kilograms,
-                BreedId = addAnimal.BreedId,
-                //DiseaseId = addAnimal.DiseaseId,
-                //OwnerId = addAnimal.OwnerId,
+           
 
-            };
+            var animal = data.Animals.Select(s => new Animal
+            {
+                Name = s.Name,
+                Breed = s.Breed,
+            
+                          
+            });
 
             data.Add(animal);
             data.SaveChanges();

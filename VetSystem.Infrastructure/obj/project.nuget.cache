@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "2VgUpRAT8e0IIKzTvNOkuMEZk0iQje0OZOIKX0v8QzDQ1IK/Q7zpAMO21kLMQd+47/BchtwRDFx6bEtsVwyuHQ==",
+  "dgSpecHash": "hxi8CuW4N48sIzQsqMMWzEah2hynv8U5YOFmWwlzBCI0Hv5Hqd+WrT2+h7Ghknzq8XOgvcdH0QpiiGb+VIFZsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\zzhelev\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\zzhelev\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.8\\microsoft.aspnetcore.cryptography.internal.6.0.8.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.8\\microsoft.aspnetcore.cryptography.keyderivation.6.0.8.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.8.nupkg.sha512",
-    "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",

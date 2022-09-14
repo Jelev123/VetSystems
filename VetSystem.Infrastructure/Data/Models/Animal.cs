@@ -1,5 +1,7 @@
 ﻿namespace VetSystem.Infrastucture.Data.Models
 {
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public class Animal
     {
         public int Id { get; set; }
@@ -15,6 +17,9 @@
         public Owner Owner { get; set; }
 
         public int BreedId { get; set; }
+
+        [NotMapped]
+        public string BreedName { get; set; }
 
         public Breed Breed { get; set; }
 
