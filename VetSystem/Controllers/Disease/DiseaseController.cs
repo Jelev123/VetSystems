@@ -16,6 +16,7 @@
 
         public IActionResult Add()
         {
+
             var view = new AddDisieseViewModel();
             return this.View(view);
         }
