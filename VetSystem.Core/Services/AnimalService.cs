@@ -21,10 +21,7 @@
 
             var animal = data.Animals.Select(s => new Animal
             {
-                Name = s.Name,
-                Breed = s.Breed,
-            
-                          
+                Name = s.Name,                                    
             });
 
             data.Add(animal);

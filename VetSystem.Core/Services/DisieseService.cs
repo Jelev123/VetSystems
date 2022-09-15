@@ -20,7 +20,6 @@
             var disease = new Disease
             {
                 Name = add.Name,
-                DiseaseCategoryId  = add.DiseaseCategoryId,
             };
 
             data.Add(disease);

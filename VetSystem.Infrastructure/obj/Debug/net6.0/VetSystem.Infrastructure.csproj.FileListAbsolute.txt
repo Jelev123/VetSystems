@@ -10,3 +10,15 @@ C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem.Infrastructure\obj\Debug\n
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem.Infrastructure\obj\Debug\net6.0\refint\VetSystem.Infrastructure.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.pdb
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem.Infrastructure\obj\Debug\net6.0\ref\VetSystem.Infrastructure.dll
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\bin\Debug\net6.0\VetSystem.Infrastructure.deps.json
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\bin\Debug\net6.0\VetSystem.Infrastructure.dll
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\bin\Debug\net6.0\VetSystem.Infrastructure.pdb
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.dll
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\refint\VetSystem.Infrastructure.dll
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.pdb
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\ref\VetSystem.Infrastructure.dll
