@@ -40,8 +40,8 @@
         [HttpPost]
         public async Task<IActionResult> Add(AddAnimalViewModel addAnimal)
         {
-            
-           var add = this.animalService.AddAnimal(addAnimal);
+
+            var add = this.animalService.AddAnimal(addAnimal);
             return this.Redirect("/");
         }
 
