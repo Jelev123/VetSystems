@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VetSystem
 build_property.RootNamespace = VetSystem
-build_property.ProjectDir = C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\
+build_property.ProjectDir = C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Owner\Desktop\Test\VetSystems\VetSystem
+build_property.MSBuildProjectDirectory = C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Animal/Add.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Animal/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Breed/Add.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Breed/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJlZWRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/DiseaseCategory/Add.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/DiseaseCategory/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZUNhdGVnb3J5XEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Disease/Add.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Disease/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Home/Index.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Home/Privacy.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Shared/Error.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/_ViewImports.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/_ViewStart.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Owner/Desktop/Test/VetSystems/VetSystem/Views/Shared/_Layout.cshtml]
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-b3nnncspax

@@ -9,31 +9,16 @@
     public class AnimalController : Controller
     {
         private readonly IAnimalService animalService;
-        private readonly ApplicationDbContext data;
 
-        public AnimalController(IAnimalService animalService, ApplicationDbContext data)
+        public AnimalController(IAnimalService animalService)
         {
             this.animalService = animalService;
-            this.data = data;
         }
 
 
         public IActionResult Add()
-        {
-            var all = new Dictionary<int, string>();
-
-            var breeds = this.data.Breeds;
-
-            foreach (var item in breeds)
-            {
-                if (!all.ContainsKey(item.Id))
-                {
-                    all.Add(item.Id, item.Name);
-                }
-            }
-
-
-            var animal = new AddAnimalViewModel(all.Values.ToList());
+        {         
+            var animal = new AddAnimalViewModel();
             return this.View(animal);
         }
 

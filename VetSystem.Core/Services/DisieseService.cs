@@ -1,5 +1,6 @@
 ﻿namespace VetSystem.Core.Services
 {
+    using Microsoft.EntityFrameworkCore;
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Disiese;
@@ -17,11 +18,14 @@
 
         public async Task AddDisiese(AddDisieseViewModel add)
         {
+            var name = data.DiseaseCategories.Select(s => s.Name);
             var disease = new Disease
             {
                 Name = add.Name,
+                DiseaseCategoryId = add.DiseaseCategoryId,
+                DiseaseCategories = (DiseaseCategory)add.AllDiseaseCategories
             };
-
+                         
             data.Add(disease);
             data.SaveChanges();
         }

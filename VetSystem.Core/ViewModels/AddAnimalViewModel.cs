@@ -4,19 +4,7 @@
     using System.ComponentModel;
 
     public class AddAnimalViewModel
-    {
-        public List<string> list;
-
-
-        public AddAnimalViewModel(List<string> list)
-        {
-
-            this.BreedName = list;
-            this.DiseaseName = list;
-
-        }
-
-
+    {      
         public string Name { get; set; }
 
         public int Age { get; set; }

@@ -1,6 +1,7 @@
 ﻿namespace VetSystem.Controllers.Disease
 {
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Rendering;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Disiese;
     using VetSystem.Infrastructure.Data;
@@ -18,20 +19,13 @@
 
 
         public IActionResult Add()
-        {
-            var all = new Dictionary<int, string>();
-
-            var diseaseCategory = this.data.DiseaseCategories;
-
-            foreach (var item in diseaseCategory)
+        {                    
+            var view = new AddDisieseViewModel()
             {
-                if (!all.ContainsKey(item.Id))
-                {
-                    all.Add(item.Id,item.Name);
-                }
-            }
-
-            var view = new AddDisieseViewModel(all.Values.ToList());
+                Name = data.Diseases.Select(d => d.Name).First(),
+                DiseaseCategoryName = data.DiseaseCategories.Select(s => s.Name).First(),
+                DiseaseCategoryId = data.DiseaseCategories.Select(s => s.Id).First(),
+            };
             return this.View(view);
         }
 
