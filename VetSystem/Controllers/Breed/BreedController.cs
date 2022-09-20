@@ -2,7 +2,6 @@
 {
     using Microsoft.AspNetCore.Mvc;
     using VetSystem.Core.Contracts;
-    using VetSystem.Core.ViewModels;
     using VetSystem.Core.ViewModels.Breed;
 
     public class BreedController : Controller

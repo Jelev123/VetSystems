@@ -170,3 +170,12 @@ C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\obj\Debug\net6.0\refint\VetSyst
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\obj\Debug\net6.0\VetSystem.pdb
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\obj\Debug\net6.0\VetSystem.genruntimeconfig.cache
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\obj\Debug\net6.0\ref\VetSystem.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

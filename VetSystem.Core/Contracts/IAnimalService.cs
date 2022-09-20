@@ -1,6 +1,6 @@
 ﻿namespace VetSystem.Core.Contracts
 {
-    using VetSystem.Core.Models;
+    using VetSystem.Core.ViewModels.Animal;
 
     public interface IAnimalService
     {

@@ -1,5 +1,5 @@
-﻿@using VetSystem.Core.Models
-@using VetSystem.Infrastructure.Data
+﻿@using VetSystem.Core.ViewModels.Animal
+@using VetSystem.Core.ViewModels.Breed
 @model AddAnimalViewModel
 
 <div class="row">
@@ -16,20 +16,13 @@
             <label asp-for="Kilograms"></label>
             <input asp-for="Kilograms" class="form-control" />
         </div>
-        <div>
-            <label asp-for="OwnerId"></label>
-            <input asp-for="OwnerId" class="form-control" />
-
-        </div>
-        <div>
-            <label asp-for="BreedId"></label>
-            <input asp-for="BreedId" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label asp-for="DiseaseId"></label>
-            <input asp-for="DiseaseId" class="form-control" />
-        </div>
-
+        <select class="form-control text-primary" id="breeds" asp-for="Breeds">
+            <option selected disabled>--- Select Breed ---</option>
+            @foreach (var breed in (IEnumerable<BreedViewDataViewModel>)this.ViewData["breeds"])
+            {
+                <option value="@breed.Name">@breed.Name</option>
+            }
+        </select>
         <input class="btn text-black btn-info text-center " type="submit" value="Add" />
     </form>
 </div>

@@ -1,11 +1,10 @@
 ﻿namespace VetSystem.Core.Services
 {
-    using Microsoft.EntityFrameworkCore;
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
+    using VetSystem.Core.ViewModels.DiseaseCategory;
     using VetSystem.Core.ViewModels.Disiese;
     using VetSystem.Infrastructure.Data;
-    using VetSystem.Infrastucture.Data.Models;
 
     public class DisieseService : IDisieseService
     {
@@ -16,18 +15,20 @@
             this.data = data;
         }
 
-        public async Task AddDisiese(AddDisieseViewModel add)
+        public Task AddDisiese(AddDisieseViewModel add)
         {
-            var name = data.DiseaseCategories.Select(s => s.Name);
-            var disease = new Disease
+            DiseseServiceModel disease = new DiseseServiceModel
             {
                 Name = add.Name,
-                DiseaseCategoryId = add.DiseaseCategoryId,
-                DiseaseCategories = (DiseaseCategory)add.AllDiseaseCategories
+                DiseaseCategories = new DiseaseCategoryServiceModel
+                {
+                    Name = add.DiseaseCategories,
+                }
             };
-                         
+
             data.Add(disease);
             data.SaveChanges();
+            return Task.CompletedTask;
         }
     }
 }

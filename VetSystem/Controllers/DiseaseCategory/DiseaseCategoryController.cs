@@ -16,12 +16,11 @@
 
         public IActionResult Add()
         {
-            var view = new AddDiseaseCategoryViewModel();
-            return this.View(view);
+            return this.View();
         }
 
         [HttpPost]
-        public IActionResult Add(AddDiseaseCategoryViewModel add)
+        public async Task<IActionResult> Add(AddDiseaseCategoryViewModel add)
         {
             var diseaseCategory = this.diseaseCategoryService.Add(add);
             return this.Redirect("/");

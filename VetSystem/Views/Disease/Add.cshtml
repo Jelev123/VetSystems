@@ -1,4 +1,5 @@
-﻿@using VetSystem.Core.ViewModels.Disiese
+﻿@using VetSystem.Core.ViewModels.DiseaseCategory
+@using VetSystem.Core.ViewModels.Disiese
 @model AddDisieseViewModel
 
 <form method="post">
@@ -6,12 +7,12 @@
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
     </div>
-    <div class="form-group">
-
-        <label asp-for="DiseaseCategoryName"></label>
-        <input asp-for="DiseaseCategoryName" class="form-control" />
-
-
-    </div>
+    <select class="form-control text-primary" id="diseaseCategory" asp-for="DiseaseCategories">
+        <option selected disabled>--- Select Disease Category ---</option>
+        @foreach (var diseaseCategory in (IEnumerable<DiseaseCategoryViewDataModel>)this.ViewData["diseaseCategory"])
+        {
+            <option value="@diseaseCategory.Name">@diseaseCategory.Name</option>
+        }
+    </select>
     <input class="btn text-black btn-info text-center " type="submit" value="Add" />
 </form>

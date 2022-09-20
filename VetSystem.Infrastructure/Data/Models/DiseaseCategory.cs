@@ -2,9 +2,9 @@
 {
     public class DiseaseCategory
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public ICollection<Disease> Diseases { get; set; } = new HashSet<Disease>();
     }

@@ -2,9 +2,9 @@
 {
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
-    using VetSystem.Core.Models;
+    using VetSystem.Core.ViewModels.Animal;
+    using VetSystem.Core.ViewModels.Breed;
     using VetSystem.Infrastructure.Data;
-    using VetSystem.Infrastucture.Data.Models;
 
     public class AnimalService : IAnimalService
     {
@@ -17,12 +17,17 @@
 
         public async Task AddAnimal(AddAnimalViewModel addAnimal)
         {
-           
-
-            var animal = data.Animals.Select(s => new Animal
+            AnimalServiceModel animal = new AnimalServiceModel
             {
-                Name = s.Name,                                    
-            });
+                Name = addAnimal.Name,
+                Kilograms = addAnimal.Kilograms,
+                Age = addAnimal.Age,
+                BreedId = addAnimal.BreedId,
+                Breeds = new AnimalBreedsServiceModel
+                {
+                    Name = addAnimal.Breeds,
+                }  
+            };
 
             data.Add(animal);
             data.SaveChanges();

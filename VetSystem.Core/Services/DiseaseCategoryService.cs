@@ -1,5 +1,6 @@
 ﻿namespace VetSystem.Core.Services
 {
+    using System.Collections.Generic;
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.DiseaseCategory;
@@ -17,13 +18,24 @@
 
         public async Task Add(AddDiseaseCategoryViewModel add)
         {
-            var disease = new DiseaseCategory
+            var diseaseCategory = new DiseaseCategory
             {
                 Name = add.Name,
             };
 
-            data.Add(disease);
+            data.Add(diseaseCategory);
             data.SaveChanges();
+        }
+
+        public IEnumerable<AllDiseaseCategories> AllDiseaseCategories<T>()
+        {
+            var all = this.data.DiseaseCategories
+                 .Select(s => new AllDiseaseCategories
+                 {
+                     Name = s.Name
+                 });
+
+            return all;
         }
     }
 }

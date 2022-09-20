@@ -11,12 +11,8 @@
 
         public string Name { get; set; }
 
-        [DisplayName("Disease")]
-        public int DiseaseCategoryId { get; set; }
+        public string DiseaseCategories { get; set; }
 
-        public string DiseaseCategoryName { get; set; }
-
-        public ICollection<AllDiseaseCategories> AllDiseaseCategories { get; set; }
 
     }
 }

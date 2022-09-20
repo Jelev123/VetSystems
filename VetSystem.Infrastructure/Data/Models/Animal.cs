@@ -18,9 +18,6 @@
 
         public int BreedId { get; set; }
 
-        [NotMapped]
-        public string BreedName { get; set; }
-
         public Breed Breed { get; set; }
 
         public int DiseaseId { get; set; }

@@ -4,7 +4,6 @@
     using AutoMapper.QueryableExtensions;
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
-    using VetSystem.Core.ViewModels;
     using VetSystem.Core.ViewModels.Breed;
     using VetSystem.Infrastructure.Data;
     using VetSystem.Infrastucture.Data.Models;
