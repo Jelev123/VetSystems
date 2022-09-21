@@ -19,6 +19,8 @@
         public async Task AddAnimal(AddAnimalViewModel addAnimal)
         {
             var breed = this.data.Breeds.FirstOrDefault(s => s.Name == addAnimal.BreedName);
+            var disease = this.data.Diseases.FirstOrDefault(s => s.Name == addAnimal.DiseaseName);
+            var owner = this.data.Owners.FirstOrDefault(s => s.FirstName == addAnimal.OwnerFirstName || s.LastName == addAnimal.OwnerLastName);
             var animal = new Animal
             {
                 Name = addAnimal.Name,
@@ -26,6 +28,10 @@
                 Kilograms = addAnimal.Kilograms,
                 Breed = breed,
                 BreedId = breed.Id,
+                Diseases = disease,
+                DiseaseId = disease.Id,
+                Owner = owner,
+                OwnerId = owner.Id
             };
 
             data.Add(animal);

@@ -1,6 +1,6 @@
-﻿namespace VetSystem.Infrastucture.Data.Models
+﻿namespace VetSystem.Core.ViewModels.Owner
 {
-    public class Owner
+    public class AllOwnersViewModel
     {
         public int Id { get; set; }
 
@@ -9,7 +9,5 @@
         public string LastName { get; set; }
 
         public int? PhoneNumber { get; set; }
-
-        public ICollection<Animal> Animals { get; set; } = new HashSet<Animal>();
     }
 }

@@ -19,5 +19,13 @@
         public int DiseaseId { get; set; }
 
         public string DiseaseName { get; set; }
+
+        public int OwnerId { get; set; }
+
+        public string OwnerFirstName { get; set; }
+
+        public string OwnerLastName { get; set; }
+
+        public int PhoneNumber { get; set; }
     }
 }
