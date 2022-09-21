@@ -7,11 +7,11 @@
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
     </div>
-    <select class="form-control text-primary" id="diseaseCategory" asp-for="DiseaseCategories">
+    <select class="form-control text-primary" id="diseaseCategory" asp-for="DiseaceCategoryName">
         <option selected disabled>--- Select Disease Category ---</option>
-        @foreach (var diseaseCategory in (IEnumerable<DiseaseCategoryViewDataModel>)this.ViewData["diseaseCategory"])
+        @foreach (var diseaseCategory in (IEnumerable<AddDisieseViewModel>)this.ViewData["diseaseCategory"])
         {
-            <option value="@diseaseCategory.Name">@diseaseCategory.Name</option>
+            <option value="@diseaseCategory.DiseaceCategoryName">@diseaseCategory.DiseaceCategoryName</option>
         }
     </select>
     <input class="btn text-black btn-info text-center " type="submit" value="Add" />

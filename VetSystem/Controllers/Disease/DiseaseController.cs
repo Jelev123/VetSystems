@@ -26,9 +26,9 @@
         {
             var allDiseaseCategory = this.categoryService.AllDiseaseCategories<AllDiseaseCategories>();
 
-            this.ViewData["diseaseCategory"] = allDiseaseCategory.Select(s => new DiseaseCategoryViewDataModel
+            this.ViewData["diseaseCategory"] = allDiseaseCategory.Select(s => new AddDisieseViewModel
             {
-                Name = s.Name,
+                DiseaceCategoryName = s.Name,
             }).ToList();
 
             return this.View();

@@ -2,9 +2,9 @@
 {
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
-    using VetSystem.Core.ViewModels.DiseaseCategory;
     using VetSystem.Core.ViewModels.Disiese;
     using VetSystem.Infrastructure.Data;
+    using VetSystem.Infrastucture.Data.Models;
 
     public class DisieseService : IDisieseService
     {
@@ -17,13 +17,13 @@
 
         public Task AddDisiese(AddDisieseViewModel add)
         {
-            DiseseServiceModel disease = new DiseseServiceModel
+            var diseaseCategory = data.DiseaseCategories.FirstOrDefault(s => s.Name == add.DiseaceCategoryName);
+
+            var disease = new Disease
             {
                 Name = add.Name,
-                DiseaseCategories = new DiseaseCategoryServiceModel
-                {
-                    Name = add.DiseaseCategories,
-                }
+                DiseaseCategories = diseaseCategory,
+                DiseaseCategoryId = diseaseCategory.Id,
             };
 
             data.Add(disease);

@@ -7,12 +7,9 @@
 
     public class AddDisieseViewModel
     {
-        public int Id { get; set; }
+        public string? Name { get; set; }
 
-        public string Name { get; set; }
-
-        public string DiseaseCategories { get; set; }
-
+        public string DiseaceCategoryName { get; set; }
 
     }
 }
