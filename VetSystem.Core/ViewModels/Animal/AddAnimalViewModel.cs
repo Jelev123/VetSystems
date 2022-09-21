@@ -14,8 +14,6 @@
 
         public int BreedId { get; set; }
 
-        public string Breeds { get; set; }
-
-
+        public string BreedName { get; set; }
     }
 }

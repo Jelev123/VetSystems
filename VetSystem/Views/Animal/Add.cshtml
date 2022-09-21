@@ -16,11 +16,11 @@
             <label asp-for="Kilograms"></label>
             <input asp-for="Kilograms" class="form-control" />
         </div>
-        <select class="form-control text-primary" id="breeds" asp-for="Breeds">
+        <select class="form-control text-primary" id="breeds" asp-for="BreedName">
             <option selected disabled>--- Select Breed ---</option>
-            @foreach (var breed in (IEnumerable<BreedViewDataViewModel>)this.ViewData["breeds"])
+            @foreach (var breed in (IEnumerable<AddAnimalViewModel>)this.ViewData["breeds"])
             {
-                <option value="@breed.Name">@breed.Name</option>
+                <option value="@breed.BreedName">@breed.BreedName</option>
             }
         </select>
         <input class="btn text-black btn-info text-center " type="submit" value="Add" />

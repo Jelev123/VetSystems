@@ -5,6 +5,7 @@
     using VetSystem.Core.ViewModels.Animal;
     using VetSystem.Core.ViewModels.Breed;
     using VetSystem.Infrastructure.Data;
+    using VetSystem.Infrastucture.Data.Models;
 
     public class AnimalService : IAnimalService
     {
@@ -17,16 +18,13 @@
 
         public async Task AddAnimal(AddAnimalViewModel addAnimal)
         {
-            AnimalServiceModel animal = new AnimalServiceModel
+            var breed = this.data.Breeds.FirstOrDefault(s => s.Name == addAnimal.BreedName);
+            var animal = new Animal
             {
                 Name = addAnimal.Name,
-                Kilograms = addAnimal.Kilograms,
                 Age = addAnimal.Age,
-                BreedId = addAnimal.BreedId,
-                Breeds = new AnimalBreedsServiceModel
-                {
-                    Name = addAnimal.Breeds,
-                }  
+                Kilograms = addAnimal.Kilograms,
+                Breed = breed,
             };
 
             data.Add(animal);

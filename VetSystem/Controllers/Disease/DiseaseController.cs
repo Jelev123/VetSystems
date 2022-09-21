@@ -1,9 +1,7 @@
 ﻿namespace VetSystem.Controllers.Disease
 {
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Rendering;
     using VetSystem.Core.Contracts;
-    using VetSystem.Core.ViewModels.Breed;
     using VetSystem.Core.ViewModels.DiseaseCategory;
     using VetSystem.Core.ViewModels.Disiese;
     using VetSystem.Infrastructure.Data;
@@ -12,12 +10,10 @@
     {
         private readonly IDisieseService disieseService;
         private readonly IDiseaseCategoryService categoryService;
-        private readonly ApplicationDbContext data;
 
-        public DiseaseController(IDisieseService disieseService, ApplicationDbContext data, IDiseaseCategoryService categoryService)
+        public DiseaseController(IDisieseService disieseService,IDiseaseCategoryService categoryService)
         {
             this.disieseService = disieseService;
-            this.data = data;
             this.categoryService = categoryService;
         }
 

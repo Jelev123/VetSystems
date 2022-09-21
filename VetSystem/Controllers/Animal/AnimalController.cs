@@ -23,9 +23,9 @@
         {
             var allBreeds = this.breedService.AllBreeds<AllBreedsViewModel>();
 
-            this.ViewData["breeds"] = allBreeds.Select(s => new BreedViewDataViewModel
+            this.ViewData["breeds"] = allBreeds.Select(s => new AddAnimalViewModel
             {
-                Name = s.Name,
+                BreedName = s.Name,
             }).ToList();
        
             return this.View();
