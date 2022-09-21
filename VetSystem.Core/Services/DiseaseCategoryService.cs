@@ -29,13 +29,11 @@
 
         public IEnumerable<AllDiseaseCategories> AllDiseaseCategories<T>()
         {
-            var all = this.data.DiseaseCategories
+            return this.data.DiseaseCategories
                  .Select(s => new AllDiseaseCategories
                  {
                      Name = s.Name
                  });
-
-            return all;
         }
     }
 }

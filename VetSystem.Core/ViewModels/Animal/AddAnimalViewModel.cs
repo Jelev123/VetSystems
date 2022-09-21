@@ -15,5 +15,9 @@
         public int BreedId { get; set; }
 
         public string BreedName { get; set; }
+
+        public int DiseaseId { get; set; }
+
+        public string DiseaseName { get; set; }
     }
 }

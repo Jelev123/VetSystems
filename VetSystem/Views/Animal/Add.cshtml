@@ -23,6 +23,13 @@
                 <option value="@breed.BreedName">@breed.BreedName</option>
             }
         </select>
+        <select class="form-control text-primary" id="breeds" asp-for="DiseaseName">
+            <option selected disabled>--- Select Disease ---</option>
+            @foreach (var breed in (IEnumerable<AddAnimalViewModel>)this.ViewData["diseases"])
+            {
+                <option value="@breed.DiseaseName">@breed.DiseaseName</option>
+            }
+        </select>
         <input class="btn text-black btn-info text-center " type="submit" value="Add" />
     </form>
 </div>

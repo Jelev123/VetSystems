@@ -25,6 +25,7 @@
                 Age = addAnimal.Age,
                 Kilograms = addAnimal.Kilograms,
                 Breed = breed,
+                BreedId = breed.Id,
             };
 
             data.Add(animal);

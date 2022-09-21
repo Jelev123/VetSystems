@@ -5,5 +5,7 @@
     public interface IDisieseService
     {
         Task AddDisiese(AddDisieseViewModel add);
+
+        IEnumerable<AllDiseaseViewModel> AllDiseases<T>();
     }
 }

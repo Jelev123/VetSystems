@@ -1,5 +1,6 @@
 ﻿namespace VetSystem.Core.Services
 {
+    using System.Collections.Generic;
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Disiese;
@@ -29,6 +30,16 @@
             data.Add(disease);
             data.SaveChanges();
             return Task.CompletedTask;
+        }
+
+        public IEnumerable<AllDiseaseViewModel> AllDiseases<T>()
+        {
+            return this.data.Diseases
+                .Select(s => new AllDiseaseViewModel
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                });
         }
     }
 }
