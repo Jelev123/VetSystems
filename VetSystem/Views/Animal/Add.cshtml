@@ -37,6 +37,13 @@
                 <option value="@owner.OwnerFirstName @owner.OwnerLastName">@owner.OwnerFirstName @owner.OwnerLastName</option>
             }
         </select>
+         <select class="form-control text-primary" id="owners" asp-for="Name">
+            <option selected disabled>--- Select Medication ---</option>
+            @foreach (var owner in (IEnumerable<AddAnimalViewModel>)this.ViewData["medication"])
+            {
+                <option value="@owner.MedicationName">@owner.MedicationName</option>
+            }
+        </select>
         <input class="btn text-black btn-info text-center " type="submit" value="Add" />
     </form>
 </div>

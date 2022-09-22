@@ -28,3 +28,5 @@ C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\obj\Debug\net6.0\VetSystem
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\obj\Debug\net6.0\refint\VetSystem.Core.dll
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\obj\Debug\net6.0\VetSystem.Core.pdb
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\obj\Debug\net6.0\ref\VetSystem.Core.dll
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\bin\Debug\net6.0\VetSystem.Core.runtimeconfig.json
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\obj\Debug\net6.0\VetSystem.Core.genruntimeconfig.cache

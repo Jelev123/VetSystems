@@ -22,7 +22,7 @@
         [HttpPost]
         public async Task<IActionResult> Add(AddDiseaseCategoryViewModel add)
         {
-            var diseaseCategory = this.diseaseCategoryService.Add(add);
+            this.diseaseCategoryService.Add(add);
             return this.Redirect("/");
             
         }

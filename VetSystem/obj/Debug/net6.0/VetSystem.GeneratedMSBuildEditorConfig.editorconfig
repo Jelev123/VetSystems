@@ -43,6 +43,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/MedicationCategory/AddMedCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhdGlvbkNhdGVnb3J5XEFkZE1lZENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Medication/AddMedication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhdGlvblxBZGRNZWRpY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Owner/AddOwner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcQWRkT3duZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

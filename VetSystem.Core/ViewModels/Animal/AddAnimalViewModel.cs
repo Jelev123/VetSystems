@@ -27,5 +27,7 @@
         public string OwnerLastName { get; set; }
 
         public int PhoneNumber { get; set; }
+
+        public string MedicationName { get; set; }
     }
 }
