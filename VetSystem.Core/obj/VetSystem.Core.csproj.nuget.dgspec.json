@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Core\\VetSystem.Core.csproj": {}
+    "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Core\\VetSystem.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Core\\VetSystem.Core.csproj": {
+    "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Core\\VetSystem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Core\\VetSystem.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Core\\VetSystem.Core.csproj",
         "projectName": "VetSystem.Core",
-        "projectPath": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Core\\VetSystem.Core.csproj",
-        "packagesPath": "C:\\Users\\zzhelev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Core\\obj\\",
+        "projectPath": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Core\\VetSystem.Core.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zzhelev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj"
+              "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj"
               }
             }
           }
@@ -59,8 +63,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,21 +72,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj": {
+    "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj",
         "projectName": "VetSystem.Infrastructure",
-        "projectPath": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\zzhelev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zzhelev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,13 +120,33 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0-rc.1.22426.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0-rc.1.22426.7, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[7.0.0-rc.1.22426.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0-rc.1.22426.7, )"
             }
           },
           "imports": [
@@ -128,8 +155,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -138,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

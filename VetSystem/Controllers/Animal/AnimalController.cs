@@ -6,6 +6,7 @@
     using VetSystem.Core.ViewModels.Animal;
     using VetSystem.Core.ViewModels.Breed;
     using VetSystem.Core.ViewModels.Disiese;
+    using VetSystem.Core.ViewModels.Medicament;
     using VetSystem.Core.ViewModels.Owner;
     using VetSystem.Infrastructure.Data;
 
@@ -15,13 +16,15 @@
         private readonly IBreedService breedService;
         private readonly IDisieseService disieseService;
         private readonly IOwnerService ownerService;
+        private readonly IMedicationService medicationService;
 
-        public AnimalController(IAnimalService animalService, IBreedService breedService, IDisieseService disieseService, IOwnerService ownerService)
+        public AnimalController(IAnimalService animalService, IBreedService breedService, IDisieseService disieseService, IOwnerService ownerService, IMedicationService medicationService)
         {
             this.animalService = animalService;
             this.breedService = breedService;
             this.disieseService = disieseService;
             this.ownerService = ownerService;
+            this.medicationService = medicationService;
         }
 
 
@@ -30,6 +33,7 @@
             var allBreeds = this.breedService.AllBreeds<AllBreedsViewModel>();
             var allDisease = this.disieseService.AllDiseases<AllDiseaseViewModel>();
             var allOwners = this.ownerService.GetAll<AllOwnersViewModel>();
+            var allMedication = this.medicationService.AllMedication<AddMedicatonViewModel>();
 
             this.ViewData["breeds"] = allBreeds.Select(s => new AddAnimalViewModel
             {
@@ -45,6 +49,11 @@
             {
                OwnerFirstName = s.FirstName,
                OwnerLastName = s.LastName
+            }).ToList();
+
+            this.ViewData["medication"] = allMedication.Select(s => new AddAnimalViewModel
+            {
+               MedicationName = s.Name
             }).ToList();
 
             return this.View();

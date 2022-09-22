@@ -22,3 +22,5 @@ C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\refint\VetSystem.Infrastructure.dll
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.pdb
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\ref\VetSystem.Infrastructure.dll
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\bin\Debug\net6.0\VetSystem.Infrastructure.runtimeconfig.json
+C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Infrastructure\obj\Debug\net6.0\VetSystem.Infrastructure.genruntimeconfig.cache

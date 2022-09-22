@@ -1,0 +1,17 @@
+﻿@using VetSystem.Core.ViewModels.Medicament
+@model AddMedicatonViewModel
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <select class="form-control text-primary" id="diseaseCategory" asp-for="MedicationCategoryName">
+        <option selected disabled>--- Select Disease Category ---</option>
+        @foreach (var diseaseCategory in (IEnumerable<AddMedicatonViewModel>)this.ViewData["medCategories"])
+        {
+            <option value="@diseaseCategory.MedicationCategoryName">@diseaseCategory.MedicationCategoryName</option>
+        }
+    </select>
+    <input class="btn text-black btn-info text-center " type="submit" value="Add" />
+</form>

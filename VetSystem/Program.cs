@@ -23,6 +23,8 @@ builder.Services.AddTransient<IBreedService, BreedService>();
 builder.Services.AddTransient<IDisieseService, DisieseService>();
 builder.Services.AddTransient<IDiseaseCategoryService, DiseaseCategoryService>();
 builder.Services.AddTransient<IOwnerService, OwnerService>();
+builder.Services.AddTransient<IMedicationService, MedicationService>();
+builder.Services.AddTransient<IMedicationCategoryService, MedicationCategoryService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
