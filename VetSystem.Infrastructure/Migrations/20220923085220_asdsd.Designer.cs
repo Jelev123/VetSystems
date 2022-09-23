@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VetSystem.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using VetSystem.Infrastructure.Data;
 namespace VetSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220923085220_asdsd")]
+    partial class asdsd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -244,7 +247,7 @@ namespace VetSystem.Infrastructure.Migrations
                     b.Property<int>("Kilograms")
                         .HasColumnType("int");
 
-                    b.Property<int>("MedicationId")
+                    b.Property<int?>("MedicationId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -450,11 +453,9 @@ namespace VetSystem.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("VetSystem.Infrastucture.Data.Models.Medication", "Medication")
+                    b.HasOne("VetSystem.Infrastucture.Data.Models.Medication", null)
                         .WithMany("Animals")
-                        .HasForeignKey("MedicationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MedicationId");
 
                     b.HasOne("VetSystem.Infrastucture.Data.Models.Owner", "Owner")
                         .WithMany("Animals")
@@ -465,8 +466,6 @@ namespace VetSystem.Infrastructure.Migrations
                     b.Navigation("Breed");
 
                     b.Navigation("Diseases");
-
-                    b.Navigation("Medication");
 
                     b.Navigation("Owner");
                 });

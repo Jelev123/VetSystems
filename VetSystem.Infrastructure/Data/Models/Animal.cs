@@ -23,5 +23,9 @@
         public int DiseaseId { get; set; }
 
         public Disease Diseases { get; set; }
+
+        public int MedicationId { get; set; }
+
+        public Medication Medication { get; set; }
     }
 }

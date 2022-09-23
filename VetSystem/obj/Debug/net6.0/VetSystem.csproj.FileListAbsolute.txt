@@ -26,7 +26,6 @@ C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -93,7 +92,6 @@ C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.AssemblyInfoInputs.cache
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.AssemblyInfo.cs
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.csproj.CoreCompileInputs.cache
-C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.RazorAssemblyInfo.cache
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.RazorAssemblyInfo.cs
@@ -108,3 +106,8 @@ C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\refint\Ve
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.pdb
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.genruntimeconfig.cache
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\ref\VetSystem.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.MvcApplicationPartsAssemblyInfo.cs

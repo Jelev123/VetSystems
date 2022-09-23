@@ -21,6 +21,7 @@
             var breed = this.data.Breeds.FirstOrDefault(s => s.Name == addAnimal.BreedName);
             var disease = this.data.Diseases.FirstOrDefault(s => s.Name == addAnimal.DiseaseName);
             var owner = this.data.Owners.FirstOrDefault(s => s.FirstName == addAnimal.OwnerFirstName || s.LastName == addAnimal.OwnerLastName);
+            var medication = this.data.Medications.FirstOrDefault(s => s.Name == addAnimal.MedicationName);
             var animal = new Animal
             {
                 Name = addAnimal.Name,
@@ -31,7 +32,10 @@
                 Diseases = disease,
                 DiseaseId = disease.Id,
                 Owner = owner,
-                OwnerId = owner.Id
+                OwnerId = owner.Id,
+                Medication = medication,
+                MedicationId = medication.Id,
+                
             };
 
             data.Add(animal);
