@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "uQsE6RODiMTbAgOhrMqbmKih/KPWDUBzd0ofLFa+8dajVvqklhkdMK/pPfflrbjmH5CUE3a+2ikET3l1Z7nzhg==",
 =======
   "dgSpecHash": "TvkbvifRtz99G9VCo57j42Sb2pq7vBaJkREgyuYUOdAO9YgXoD85AgLlkZKvR+qd6Q7SIL6o82xbk/h+dWAAlQ==",
@@ -222,6 +223,12 @@
     "C:\\Users\\zzhelev\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
 =======
+=======
+  "dgSpecHash": "TvkbvifRtz99G9VCo57j42Sb2pq7vBaJkREgyuYUOdAO9YgXoD85AgLlkZKvR+qd6Q7SIL6o82xbk/h+dWAAlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem\\VetSystem.csproj",
+  "expectedPackageFiles": [
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
     "C:\\Users\\Owner\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
@@ -434,6 +441,9 @@
     "C:\\Users\\Owner\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
   ],
   "logs": []

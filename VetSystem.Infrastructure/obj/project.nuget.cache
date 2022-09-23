@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "8Q0jO3C6UxxWLQts7d4C4wxZyJ6PL+nWzgp+CVuKTTXy5AyXw/cH0tCb7hHzLMqOuOqra7FfA1Tmr0NyV12ErA==",
 =======
   "dgSpecHash": "aKCE/tWLHyB6n5vwMwUmxGewdrKIRXr/65ivA1Fyo0k1QxUKl6im/dMkuy4PhFj6p8JuUWX6fKUh2nav4KMIXQ==",
@@ -92,6 +93,12 @@
     "C:\\Users\\zzhelev\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\zzhelev\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
 =======
+=======
+  "dgSpecHash": "aKCE/tWLHyB6n5vwMwUmxGewdrKIRXr/65ivA1Fyo0k1QxUKl6im/dMkuy4PhFj6p8JuUWX6fKUh2nav4KMIXQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Owner\\Desktop\\Test\\VetSystems\\VetSystem.Infrastructure\\VetSystem.Infrastructure.csproj",
+  "expectedPackageFiles": [
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
     "C:\\Users\\Owner\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
@@ -174,6 +181,9 @@
     "C:\\Users\\Owner\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
   ],
   "logs": []

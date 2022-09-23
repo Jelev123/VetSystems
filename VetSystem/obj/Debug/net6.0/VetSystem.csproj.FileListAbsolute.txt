@@ -204,6 +204,7 @@ C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\obj\Debug\net6.0\VetSystem.pdb
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\obj\Debug\net6.0\VetSystem.genruntimeconfig.cache
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem\obj\Debug\net6.0\ref\VetSystem.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Azure.Identity.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -219,5 +220,7 @@ C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\System.Memory.Data.dll
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
