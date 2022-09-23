@@ -11,13 +11,11 @@
     public class BreedService : IBreedService
     {
         private readonly ApplicationDbContext data;
-        private readonly IMapper mapper;
 
 
-        public BreedService(ApplicationDbContext data, IMapper mapper)
+        public BreedService(ApplicationDbContext data)
         {
             this.data = data;
-            this.mapper = mapper;
         }
 
         public async Task AddBreed(AddBreedViewModel addBreed)

@@ -2,48 +2,60 @@
 @using VetSystem.Core.ViewModels.Breed
 @model AddAnimalViewModel
 
-<div class="row">
-    <form method="post">
-        <div class="form-group">
-            <label asp-for="Name"></label>
-            <input asp-for="Name" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label asp-for="Age"></label>
-            <input asp-for="Age" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label asp-for="Kilograms"></label>
-            <input asp-for="Kilograms" class="form-control" />
-        </div>
-        <select class="form-control text-primary" id="breeds" asp-for="BreedName">
-            <option selected disabled>--- Select Breed ---</option>
-            @foreach (var breed in (IEnumerable<AddAnimalViewModel>)this.ViewData["breeds"])
-            {
-                <option value="@breed.BreedName">@breed.BreedName</option>
-            }
-        </select>
-        <select class="form-control text-primary" id="diseases" asp-for="DiseaseName">
-            <option selected disabled>--- Select Disease ---</option>
-            @foreach (var disease in (IEnumerable<AddAnimalViewModel>)this.ViewData["diseases"])
-            {
-                <option value="@disease.DiseaseName">@disease.DiseaseName</option>
-            }
-        </select>
-        <select class="form-control text-primary" id="owners" asp-for="OwnerFirstName">
-            <option selected disabled>--- Select Owner ---</option>
-            @foreach (var owner in (IEnumerable<AddAnimalViewModel>)this.ViewData["owners"])
-            {
-                <option value="@owner.OwnerFirstName @owner.OwnerLastName">@owner.OwnerFirstName @owner.OwnerLastName</option>
-            }
-        </select>
-         <select class="form-control text-primary" id="owners" asp-for="Name">
-            <option selected disabled>--- Select Medication ---</option>
-            @foreach (var owner in (IEnumerable<AddAnimalViewModel>)this.ViewData["medication"])
-            {
-                <option value="@owner.MedicationName">@owner.MedicationName</option>
-            }
-        </select>
-        <input class="btn text-black btn-info text-center " type="submit" value="Add" />
-    </form>
+<div class="col-10">
+    <div>
+        <form method="post">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Age"></label>
+                    <input asp-for="Age" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Kilograms"></label>
+                    <input asp-for="Kilograms" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control text-primary" id="breeds" asp-for="BreedName">
+                    <option selected disabled>Select Breed</option>
+                    @foreach (var breed in (IEnumerable<AddAnimalViewModel>)this.ViewData["breeds"])
+                    {
+                        <option value="@breed.BreedName">@breed.BreedName</option>
+                    }
+                </select>
+                <select class="form-control text-primary" id="diseases" asp-for="DiseaseName">
+                    <option selected disabled>Select Disease</option>
+                    @foreach (var disease in (IEnumerable<AddAnimalViewModel>)this.ViewData["diseases"])
+                    {
+                        <option value="@disease.DiseaseName">@disease.DiseaseName</option>
+                    }
+                </select>
+                <select class="form-control text-primary" id="owners" asp-for="OwnerFirstName">
+                    <option selected disabled>Select Owner First Name</option>
+                    @foreach (var owner in (IEnumerable<AddAnimalViewModel>)this.ViewData["ownerFirstName"])
+                    {
+                        <option value="@owner.OwnerFirstName">@owner.OwnerFirstName</option>
+                    }
+                </select>
+                <select class="form-control text-primary" id="owners" asp-for="OwnerLastName">
+                    <option selected disabled>Select Owner Last Name</option>
+                    @foreach (var owner in (IEnumerable<AddAnimalViewModel>)this.ViewData["ownerLastName"])
+                    {
+                        <option value="@owner.OwnerLastName">@owner.OwnerLastName</option>
+                    }
+                </select>
+                <select class="form-control text-primary" id="medication" asp-for="MedicationName">
+                    <option selected disabled>Select Medication</option>
+                    @foreach (var owner in (IEnumerable<AddAnimalViewModel>)this.ViewData["medication"])
+                    {
+                        <option value="@owner.MedicationName">@owner.MedicationName</option>
+                    }
+                </select>
+                <input class="btn text-black btn-success text-center " type="submit" value="Add" />
+        </form>
+    </div>
 </div>

@@ -12,20 +12,20 @@
 
         public int Kilograms { get; set; }
 
-        public int OwnerId { get; set; }
+        public int? OwnerId { get; set; }
 
-        public Owner Owner { get; set; }
+        public Owner? Owner { get; set; }
 
-        public int BreedId { get; set; }
+        public int? BreedId { get; set; }
 
-        public Breed Breed { get; set; }
+        public Breed? Breed { get; set; }
 
-        public int DiseaseId { get; set; }
+        public int? DiseaseId { get; set; }
 
-        public Disease Diseases { get; set; }
+        public Disease? Diseases { get; set; }
 
-        public int MedicationId { get; set; }
+        public int? MedicationId { get; set; }
 
-        public Medication Medication { get; set; }
+        public Medication? Medication { get; set; }
     }
 }

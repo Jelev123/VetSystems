@@ -45,10 +45,14 @@
                 DiseaseName = s.Name,
             }).ToList();
 
-            this.ViewData["owners"] = allOwners.Select(s => new AddAnimalViewModel
+            this.ViewData["ownerFirstName"] = allOwners.Select(s => new AddAnimalViewModel
             {
                OwnerFirstName = s.FirstName,
-               OwnerLastName = s.LastName
+            }).ToList();
+
+            this.ViewData["ownerLastName"] = allOwners.Select(s => new AddAnimalViewModel
+            {
+                OwnerLastName = s.LastName,
             }).ToList();
 
             this.ViewData["medication"] = allMedication.Select(s => new AddAnimalViewModel

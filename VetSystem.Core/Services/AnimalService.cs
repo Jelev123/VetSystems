@@ -16,12 +16,12 @@
             this.data = data;
         }
 
-        public async Task AddAnimal(AddAnimalViewModel addAnimal)
+        public Task AddAnimal(AddAnimalViewModel addAnimal)
         {
-            var breed = this.data.Breeds.FirstOrDefault(s => s.Name == addAnimal.BreedName);
-            var disease = this.data.Diseases.FirstOrDefault(s => s.Name == addAnimal.DiseaseName);
-            var owner = this.data.Owners.FirstOrDefault(s => s.FirstName == addAnimal.OwnerFirstName || s.LastName == addAnimal.OwnerLastName);
-            var medication = this.data.Medications.FirstOrDefault(s => s.Name == addAnimal.MedicationName);
+            var breed = data.Breeds.FirstOrDefault(s => s.Name == addAnimal.BreedName);
+            var disease = data.Diseases.FirstOrDefault(s => s.Name == addAnimal.DiseaseName);
+            var owner = data.Owners.FirstOrDefault(s => s.FirstName == addAnimal.OwnerFirstName);
+            var medication = data.Medications.FirstOrDefault(s => s.Name == addAnimal.MedicationName);
             var animal = new Animal
             {
                 Name = addAnimal.Name,
@@ -35,11 +35,11 @@
                 OwnerId = owner.Id,
                 Medication = medication,
                 MedicationId = medication.Id,
-                
             };
 
             data.Add(animal);
             data.SaveChanges();
+            return Task.CompletedTask;
         }
     }
 }
