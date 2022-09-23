@@ -12,12 +12,26 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">VetSystem</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color:green">VetSystem</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Animal" asp-action="AllAnimals" style="color:green">All Animals</a>
+                <a class="navbar-brand" asp-action="Add" asp-controller="Animal" class="btn btn-outline-success">Add</a>
+
+                <a class="navbar-brand btn" asp-action="Add" asp-controller="Breed" class="btn btn-outline-success">AddBreed</a>
+
+                <a class="navbar-brand btn" asp-action="Add" asp-controller="Disease" class="btn btn-outline-success">AddDesiese</a>
+
+                <a class="navbar-brand btn" asp-action="Add" asp-controller="DiseaseCategory" class="btn btn-outline-success">AddDesieseCategory</a>
+
+                <a class="navbar-brand btn" asp-action="AddOwner" asp-controller="Owner" class="btn btn-outline-success">Add Owner</a>
+
+                <a class="navbar-brand btn" asp-action="AddMedication" asp-controller="Medication" class="btn btn-outline-success">Add Medication</a>
+
+                <a class="navbar-brand btn" asp-action="AddMedCategory" asp-controller="MedicationCategory" class="btn btn-outline-success">Add Medication Category</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse">
                     <partial name="_LoginPartial" />
                 </div>
             </div>
