@@ -17,8 +17,6 @@
 
            
         }
-
-        public DbSet<Clinic> Clinics { get; set; }
         public DbSet<Animal> Animals { get; set; }
         public DbSet<Breed> Breeds { get; set; }
         public DbSet<Owner> Owners { get; set; }
