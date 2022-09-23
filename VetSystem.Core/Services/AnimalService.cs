@@ -1,5 +1,6 @@
 ﻿namespace VetSystem.Core.Services
 {
+    using System.Collections.Generic;
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Animal;
@@ -40,6 +41,24 @@
             data.Add(animal);
             data.SaveChanges();
             return Task.CompletedTask;
+        }
+
+        public IEnumerable<AllAnimalViewModel> AllAnimals<T>()
+        {
+            var allAnimals = this.data.Animals
+                .Select(s => new AllAnimalViewModel
+                {
+                    Name = s.Name,
+                    Age = s.Age,
+                    Kilograms = s.Kilograms,
+                    BreedName = s.Breed.Name,
+                    DiseaseName = s.Diseases.Name,
+                    MedicationName = s.Medication.Name,
+                    OwnerFirstName = s.Owner.FirstName,
+                    OwnerLastName = s.Owner.LastName,
+                });
+
+            return allAnimals;
         }
     }
 }

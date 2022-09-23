@@ -5,5 +5,7 @@
     public interface IAnimalService
     {
         Task AddAnimal(AddAnimalViewModel addAnimal);
+
+        IEnumerable<AllAnimalViewModel> AllAnimals<T>();
     }
 }

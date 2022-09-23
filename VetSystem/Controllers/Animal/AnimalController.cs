@@ -70,5 +70,11 @@
             return this.Redirect("/");
         }
 
+        public IActionResult AllAnimals()
+        {
+            var all = this.animalService.AllAnimals<AllAnimalViewModel>();
+            return this.View(all);
+        }
+
     }
 }
