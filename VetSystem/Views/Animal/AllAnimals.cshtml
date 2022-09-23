@@ -15,23 +15,26 @@
             <th scope="col">Owner</th>
         </tr>
     </thead>
-        @foreach (var item in Model)
-        {       
+    @foreach (var item in Model)
+    {
         <tbody>
 
-        <tr>
-            <th scope="row">@item.Id</th>
-            <td>@item.Name</td>
-            <td>@item.Age</td>
-            <td>@item.Kilograms</td>
-            <td>@item.BreedName</td>
-            <td>@item.DiseaseName</td>
-            <td>@item.MedicationName</td>
-            <td>@item.OwnerFirstName @item.OwnerLastName</td>
-        
-        <td>
-            <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@item.Id">Delete </a>
-        </td>
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Name</td>
+                <td>@item.Age</td>
+                <td>@item.Kilograms</td>
+                <td>@item.BreedName</td>
+                <td>@item.DiseaseName</td>
+                <td>@item.MedicationName</td>
+                <td>@item.OwnerFirstName @item.OwnerLastName</td>
+
+                <td>
+                    <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@item.Id">Delete </a>
+                    <a class="btn btn-info" asp-controller="Animal" asp-action="GetById" asp-route-id="@item.Id">Check </a>
+
+                </td>
+                
 
             </tr>
         </tbody>

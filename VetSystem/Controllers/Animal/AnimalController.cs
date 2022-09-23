@@ -82,5 +82,24 @@
             return this.View(all);
         }
 
+        public IActionResult GetById(int id)
+        {
+            var animal = this.animalService.GetById<AllAnimalViewModel>(id);
+            return this.View(animal);
+        }
+
+        public IActionResult EditAnimal(int id)
+        {
+            var model = this.animalService.GetById<EditAnimalViewModel>(id);
+
+            return this.View(model);
+        }
+
+        [HttpPost]
+        public IActionResult EditAnimal(EditAnimalViewModel model, int id)
+        {
+            var animal = this.animalService.EditAnimal(model,id);
+            return this.RedirectToAction(nameof(this.GetById));
+        }
     }
 }

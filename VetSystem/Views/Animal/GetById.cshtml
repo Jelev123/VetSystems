@@ -1,0 +1,37 @@
+﻿@using VetSystem.Core.ViewModels.Animal
+@model AllAnimalViewModel
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Kilograms</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Disease</th>
+            <th scope="col">Medicament</th>
+            <th scope="col">Owner</th>
+        </tr>
+    </thead>
+ 
+        <tbody>
+
+            <tr>
+                <th scope="row">@Model.Id</th>
+            <td>@Model.Name</td>
+            <td>@Model.Age</td>
+            <td>@Model.Kilograms</td>
+            <td>@Model.BreedName</td>
+            <td>@Model.DiseaseName</td>
+            <td>@Model.MedicationName</td>
+            <td>@Model.OwnerFirstName @Model.OwnerLastName</td>
+
+                <td>
+                <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@Model.Id">Delete </a>
+                <a class="btn btn-danger" asp-controller="Animal" asp-action="EditAnimal" asp-route-id="@Model.Id">Edit </a>
+                </td>
+
+            </tr>
+        </tbody>
+</table>

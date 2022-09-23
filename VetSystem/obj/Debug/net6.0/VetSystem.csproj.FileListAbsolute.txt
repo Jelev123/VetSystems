@@ -110,4 +110,3 @@ C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\Mono.Text
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem\obj\Debug\net6.0\VetSystem.MvcApplicationPartsAssemblyInfo.cs

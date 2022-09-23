@@ -27,6 +27,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEFsbEFuaW1hbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Animal/EditAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEVkaXRBbmltYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Animal/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEdldEJ5SWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Breed/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJlZWRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

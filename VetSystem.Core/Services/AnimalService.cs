@@ -4,7 +4,6 @@
     using System.Threading.Tasks;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Animal;
-    using VetSystem.Core.ViewModels.Breed;
     using VetSystem.Infrastructure.Data;
     using VetSystem.Infrastucture.Data.Models;
 
@@ -68,6 +67,43 @@
             this.data.Remove(animal);
             this.data.SaveChanges();
             return Task.CompletedTask;
+        }
+
+        public Task EditAnimal(EditAnimalViewModel model, int id)
+        {
+            var animal = this.data.Animals.FirstOrDefault(s => s.Id == id);
+            animal.Name = model.Name;
+            animal.Age = model.Age;
+            animal.Kilograms = model.Kilograms;
+            animal.DiseaseId = model.DiseaseId ;
+            animal.MedicationId = model.MedicationId;
+            animal.OwnerId = model.OwnerId;
+
+            this.data.Update(animal);
+            this.data.SaveChanges();
+            return Task.CompletedTask;
+
+        }
+
+        public AllAnimalViewModel GetById<T>(int id)
+        {
+            var animal = this.data.Animals
+                .Where(s => s.Id == id)
+                .Select(s => new AllAnimalViewModel
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                    Age = s.Age,
+                    Kilograms = s.Kilograms,
+                    BreedName = s.Breed.Name,
+                    DiseaseName = s.Diseases.Name,
+                    MedicationName = s.Medication.Name,
+                    OwnerFirstName = s.Owner.FirstName,
+                    OwnerLastName = s.Owner.LastName,
+                }).FirstOrDefault();
+
+            return animal;
+
         }
     }
 }
