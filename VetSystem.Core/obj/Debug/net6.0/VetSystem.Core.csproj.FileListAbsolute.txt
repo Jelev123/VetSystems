@@ -31,13 +31,7 @@ C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\obj\Debug\net6.0\ref\VetSy
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\bin\Debug\net6.0\VetSystem.Core.runtimeconfig.json
 C:\Users\Owner\Desktop\Test\VetSystems\VetSystem.Core\obj\Debug\net6.0\VetSystem.Core.genruntimeconfig.cache
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem.Core\bin\Debug\net6.0\VetSystem.Core.runtimeconfig.json
 C:\Users\zzhelev\source\repos\Vet\VetSystem\VetSystem.Core\obj\Debug\net6.0\VetSystem.Core.genruntimeconfig.cache
-=======
->>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
-=======
->>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
