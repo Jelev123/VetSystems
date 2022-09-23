@@ -15,11 +15,12 @@
             <th scope="col">Owner</th>
         </tr>
     </thead>
-    <tbody>
         @foreach (var item in Model)
-        {                
+        {       
+        <tbody>
+
         <tr>
-            <th scope="row">1</th>
+            <th scope="row">@item.Id</th>
             <td>@item.Name</td>
             <td>@item.Age</td>
             <td>@item.Kilograms</td>
@@ -27,7 +28,12 @@
             <td>@item.DiseaseName</td>
             <td>@item.MedicationName</td>
             <td>@item.OwnerFirstName @item.OwnerLastName</td>
-        </tr>
-        }
-    </tbody>
+        
+        <td>
+            <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@item.Id">Delete </a>
+        </td>
+
+            </tr>
+        </tbody>
+    }
 </table>

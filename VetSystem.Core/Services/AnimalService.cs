@@ -48,6 +48,7 @@
             var allAnimals = this.data.Animals
                 .Select(s => new AllAnimalViewModel
                 {
+                    Id = s.Id,
                     Name = s.Name,
                     Age = s.Age,
                     Kilograms = s.Kilograms,
@@ -59,6 +60,14 @@
                 });
 
             return allAnimals;
+        }
+
+        public Task DeleteAnimal(DeleteAnimalViewModel model)
+        {
+            var animal = this.data.Animals.FirstOrDefault(s => s.Id == model.Id);
+            this.data.Remove(animal);
+            this.data.SaveChanges();
+            return Task.CompletedTask;
         }
     }
 }

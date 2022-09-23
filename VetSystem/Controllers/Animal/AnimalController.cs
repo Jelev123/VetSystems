@@ -70,6 +70,12 @@
             return this.Redirect("/");
         }
 
+        public IActionResult DeleteAnimal(DeleteAnimalViewModel model)
+        {
+            this.animalService.DeleteAnimal(model);
+            return this.RedirectToAction("AllAnimals");
+        }
+
         public IActionResult AllAnimals()
         {
             var all = this.animalService.AllAnimals<AllAnimalViewModel>();

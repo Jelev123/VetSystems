@@ -6,6 +6,8 @@
     {
         Task AddAnimal(AddAnimalViewModel addAnimal);
 
+        Task DeleteAnimal(DeleteAnimalViewModel model);
+
         IEnumerable<AllAnimalViewModel> AllAnimals<T>();
     }
 }
