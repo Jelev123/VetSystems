@@ -21,8 +21,13 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\zzhelev\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.0-rc.1.22426.7</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\zzhelev\.nuget\packages\entityframework\6.4.4</PkgEntityFramework>
+=======
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Owner\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.0-rc.1.22426.7</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\Owner\.nuget\packages\entityframework\6.4.4</PkgEntityFramework>
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Owner\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.0-rc.1.22426.7</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\Owner\.nuget\packages\entityframework\6.4.4</PkgEntityFramework>

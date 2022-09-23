@@ -41,6 +41,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net5.0/Azure.Core.dll": {
             "related": ".xml"
           }
@@ -52,11 +53,16 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/net5.0/Azure.Core.dll": {}
         },
         "runtime": {
           "lib/net5.0/Azure.Core.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -76,6 +82,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/netstandard2.0/Azure.Identity.dll": {
             "related": ".xml"
           }
@@ -87,11 +94,16 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/netstandard2.0/Azure.Identity.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -109,6 +121,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/netstandard2.1/EntityFramework.SqlServer.dll": {
             "related": ".xml"
           },
@@ -126,6 +139,8 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/netstandard2.1/EntityFramework.SqlServer.dll": {},
           "lib/netstandard2.1/EntityFramework.dll": {}
         },
@@ -133,6 +148,9 @@
           "lib/netstandard2.1/EntityFramework.SqlServer.dll": {},
           "lib/netstandard2.1/EntityFramework.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -743,6 +761,7 @@
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -754,6 +773,8 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
             "related": ".xml"
           }
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         }
@@ -970,6 +991,7 @@
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
@@ -1074,10 +1096,42 @@
           "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         },
+=======
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer/7.0.0-rc.1.22426.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.0-rc.1.22426.7"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/7.0.0-rc.1.22426.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "7.0.0-rc.1.22426.10"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        },
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.DependencyInjection/7.0.0-rc.1.22426.10": {
         "type": "package",
@@ -1115,11 +1169,28 @@
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {}
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+      "Microsoft.Extensions.Caching.Memory/7.0.0-rc.1.22426.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Options": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Primitives": "7.0.0-rc.1.22426.10"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0-rc.1.22426.10": {
@@ -1146,6 +1217,8 @@
 =======
         }
       },
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
       "Microsoft.Extensions.Configuration.Abstractions/7.0.0-rc.1.22426.10": {
@@ -1189,6 +1262,9 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -1321,6 +1397,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Logging.dll": {
             "related": ".xml"
           }
@@ -1362,6 +1439,14 @@
         },
         "build": {
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+          "lib/net6.0/Microsoft.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.dll": {}
+        },
+        "build": {
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "buildTransitive/net6.0/_._": {}
         }
       },
@@ -1375,6 +1460,9 @@
         },
         "build": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -1399,6 +1487,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Options.dll": {
             "related": ".xml"
           }
@@ -1414,6 +1503,13 @@
           "lib/net6.0/Microsoft.Extensions.Options.dll": {}
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         },
+=======
+          "lib/net6.0/Microsoft.Extensions.Options.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Options.dll": {}
+        },
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "lib/net6.0/Microsoft.Extensions.Options.dll": {}
         },
@@ -1457,6 +1553,7 @@
       "Microsoft.Identity.Client/4.45.0": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "6.18.0"
@@ -1627,6 +1724,53 @@
         }
       },
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "6.18.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {}
+        }
+      },
+      "Microsoft.Identity.Client.Extensions.Msal/2.19.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "4.38.0",
+          "System.Security.Cryptography.ProtectedData": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Abstractions/6.21.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/6.21.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.21.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+        }
+      },
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
       "Microsoft.IdentityModel.Logging/6.21.0": {
         "type": "package",
         "dependencies": {
@@ -1640,6 +1784,9 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -1652,6 +1799,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.IdentityModel.Protocols.dll": {
             "related": ".xml"
           }
@@ -1663,11 +1811,16 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/net6.0/Microsoft.IdentityModel.Protocols.dll": {}
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Protocols.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -1682,6 +1835,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
             "related": ".xml"
           }
@@ -1693,11 +1847,16 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
         },
         "runtime": {
           "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -1713,6 +1872,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
           }
@@ -1721,6 +1881,12 @@
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {}
         },
@@ -1771,6 +1937,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
             "related": ".pdb;.xml"
           }
@@ -1782,11 +1949,16 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -2143,6 +2315,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "ref/netstandard2.0/System.CodeDom.dll": {
             "related": ".xml"
           }
@@ -2154,11 +2327,16 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "ref/netstandard2.0/System.CodeDom.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -2211,6 +2389,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/netstandard1.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
@@ -2219,6 +2398,12 @@
           "lib/netstandard1.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
+=======
+          "lib/netstandard1.0/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Collections.Immutable.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "lib/netstandard1.0/System.Collections.Immutable.dll": {}
         },
@@ -2238,6 +2423,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {
             "related": ".xml"
           }
@@ -2246,6 +2432,12 @@
           "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
         },
@@ -2269,9 +2461,13 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -2318,6 +2514,7 @@
             "assetType": "runtime",
             "rid": "win"
 <<<<<<< HEAD
+<<<<<<< HEAD
           }
         }
       },
@@ -2348,6 +2545,8 @@
           "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
             "assetType": "runtime",
             "rid": "win"
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           }
         }
       },
@@ -2367,6 +2566,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
@@ -2375,6 +2575,12 @@
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         },
@@ -2461,6 +2667,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "ref/netcoreapp3.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
@@ -2469,6 +2676,12 @@
           "lib/netcoreapp3.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Drawing.Common.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "ref/netcoreapp3.0/System.Drawing.Common.dll": {}
         },
@@ -2514,6 +2727,9 @@
         "compile": {
           "ref/netstandard1.3/System.Dynamic.Runtime.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         },
         "runtime": {
           "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
@@ -2522,6 +2738,7 @@
       "System.Formats.Asn1/5.0.0": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
 <<<<<<< HEAD
           "lib/netstandard2.0/_._": {
             "related": ".xml"
@@ -2544,6 +2761,8 @@
       "System.Formats.Asn1/5.0.0": {
         "type": "package",
         "compile": {
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/netstandard2.0/_._": {}
         },
         "runtime": {
@@ -2606,6 +2825,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
             "related": ".xml"
           }
@@ -2614,6 +2834,12 @@
           "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
         },
@@ -2762,6 +2988,9 @@
         "compile": {
           "ref/netstandard1.6/System.Linq.Expressions.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
@@ -2783,6 +3012,7 @@
           "System.Text.Json": "4.6.0"
         },
         "compile": {
+<<<<<<< HEAD
 <<<<<<< HEAD
           "lib/netstandard2.0/System.Memory.Data.dll": {
             "related": ".xml"
@@ -2818,6 +3048,8 @@
           "System.Text.Json": "4.6.0"
         },
         "compile": {
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/netstandard2.0/System.Memory.Data.dll": {}
         },
         "runtime": {
@@ -2902,6 +3134,7 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -2911,6 +3144,8 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
         }
@@ -3247,6 +3482,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
             "related": ".xml"
           }
@@ -3255,6 +3491,12 @@
           "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {}
         },
@@ -3407,9 +3649,13 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
@@ -3492,6 +3738,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "ref/net5.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
@@ -3500,6 +3747,12 @@
           "lib/net5.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
+=======
+          "ref/net5.0/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/System.Security.Permissions.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "ref/net5.0/System.Security.Permissions.dll": {}
         },
@@ -3579,6 +3832,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/netstandard2.1/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
@@ -3587,6 +3841,12 @@
           "lib/netstandard2.1/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
+=======
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
           "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
         },
@@ -3606,6 +3866,7 @@
         "compile": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           "lib/netcoreapp3.0/System.Text.Json.dll": {
             "related": ".xml"
           }
@@ -3617,11 +3878,16 @@
 =======
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
+=======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
 =======
 >>>>>>> 082c2416ab30033aba754d4ee6982d291e206098
