@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cYLw1czRH+q1Wsh/+z5zhRfmW9Tn+lHF2f2x+4OJDcw=",
+  "Hash": "nq3mL9KFMwlgepE8JR4oTalPr/EK3+Rxpqda1R2yTz4=",
   "Source": "VetSystem",
   "BasePath": "_content/VetSystem",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem\\wwwroot\\Images\\istockphoto-1302660208-612x612.jpg",
+      "SourceId": "VetSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem\\wwwroot\\",
+      "BasePath": "_content/VetSystem",
+      "RelativePath": "Images/istockphoto-1302660208-612x612.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\istockphoto-1302660208-612x612.jpg"
     },
     {
       "Identity": "C:\\Users\\zzhelev\\source\\repos\\Vet\\VetSystem\\VetSystem\\wwwroot\\js\\site.js",
