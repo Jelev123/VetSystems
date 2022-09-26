@@ -56,6 +56,7 @@
                     MedicationName = s.Medication.Name,
                     OwnerFirstName = s.Owner.FirstName,
                     OwnerLastName = s.Owner.LastName,
+                    IsHealed = s.IsHealed,
                 });
 
             return allAnimals;
@@ -75,10 +76,7 @@
             animal.Name = model.Name;
             animal.Age = model.Age;
             animal.Kilograms = model.Kilograms;
-            animal.DiseaseId = model.DiseaseId ;
-            animal.MedicationId = model.MedicationId;
-            animal.OwnerId = model.OwnerId;
-
+            
             this.data.Update(animal);
             this.data.SaveChanges();
             return Task.CompletedTask;
@@ -100,10 +98,18 @@
                     MedicationName = s.Medication.Name,
                     OwnerFirstName = s.Owner.FirstName,
                     OwnerLastName = s.Owner.LastName,
+                    IsHealed = s.IsHealed
                 }).FirstOrDefault();
 
             return animal;
 
+        }
+
+        public async Task Heal(int id)
+        {
+            var animal = this.data.Animals.FirstOrDefault(s => s.Id == id);
+            animal.IsHealed = true;
+            data.SaveChanges();
         }
     }
 }

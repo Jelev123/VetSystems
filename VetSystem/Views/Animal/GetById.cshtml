@@ -4,6 +4,7 @@
 <table class="table">
     <thead>
         <tr>
+            <th scope="col">Status</th>
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Age</th>
@@ -12,13 +13,30 @@
             <th scope="col">Disease</th>
             <th scope="col">Medicament</th>
             <th scope="col">Owner</th>
+            <th>
+                @if (Model.IsHealed == true)
+                {
+                    <h7 style="color: green">Healed</h7>
+                }
+            </th>
+           
         </tr>
     </thead>
- 
-        <tbody>
 
-            <tr>
-                <th scope="row">@Model.Id</th>
+    <tbody>
+        <tr>
+            <td>
+                @if (Model.IsHealed == true)
+                {
+                    <h6 style="color: green">Healed</h6>
+                }
+                @if (Model.IsHealed == false)
+                {
+                    <h6 style="color: red">In treatment</h6>
+
+                }
+            </td>
+            <td scope="row">@Model.Id</td>
             <td>@Model.Name</td>
             <td>@Model.Age</td>
             <td>@Model.Kilograms</td>
@@ -27,11 +45,12 @@
             <td>@Model.MedicationName</td>
             <td>@Model.OwnerFirstName @Model.OwnerLastName</td>
 
-                <td>
+            <td>
                 <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@Model.Id">Delete </a>
-                <a class="btn btn-danger" asp-controller="Animal" asp-action="EditAnimal" asp-route-id="@Model.Id">Edit </a>
-                </td>
+                <a class="btn" asp-controller="Animal" asp-action="EditAnimal" asp-route-id="@Model.Id">Edit </a>
+                <a class="btn" asp-controller="Animal" asp-action="Heal" asp-route-id="@Model.Id">Heal </a>
+            </td>
 
-            </tr>
-        </tbody>
+        </tr>
+    </tbody>
 </table>

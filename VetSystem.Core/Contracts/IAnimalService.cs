@@ -10,6 +10,8 @@
 
         Task EditAnimal(EditAnimalViewModel model, int id);
 
+        Task Heal(int id);
+
         AllAnimalViewModel GetById<T>(int id);
 
         IEnumerable<AllAnimalViewModel> AllAnimals<T>();

@@ -16,7 +16,7 @@
 
         public string? DiseaseName { get; set; }
 
-        public int DiseaseId { get; set; }
+        public int? DiseaseId { get; set; }
 
         public string? OwnerFirstName { get; set; }
 

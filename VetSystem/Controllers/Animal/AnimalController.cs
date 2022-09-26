@@ -90,16 +90,21 @@
 
         public IActionResult EditAnimal(int id)
         {
-            var model = this.animalService.GetById<EditAnimalViewModel>(id);
-
-            return this.View(model);
+            var animal = this.animalService.GetById<AllAnimalViewModel>(id);
+            return this.View(animal);
         }
 
         [HttpPost]
         public IActionResult EditAnimal(EditAnimalViewModel model, int id)
         {
             var animal = this.animalService.EditAnimal(model,id);
-            return this.RedirectToAction(nameof(this.GetById));
+            return this.Redirect("/");
+        }
+
+        public IActionResult Heal(int id)
+        {
+            var heal = this.animalService.Heal(id);
+            return this.Redirect("/");
         }
     }
 }

@@ -5,6 +5,7 @@
 <table class="table">
     <thead>
         <tr>
+            <th scope="col">Status</th>
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Age</th>
@@ -13,14 +14,28 @@
             <th scope="col">Disease</th>
             <th scope="col">Medicament</th>
             <th scope="col">Owner</th>
+            <th></th>
+
         </tr>
     </thead>
     @foreach (var item in Model)
     {
+        
         <tbody>
-
+           
             <tr>
-                <th scope="row">@item.Id</th>
+                <td>
+                    @if (@item.IsHealed == true)
+                    {
+                        <h6 style="color: green">Healed</h6>
+                    }
+                    @if (item.IsHealed == false)
+                    {
+                        <h6 style="color: red">In treatment</h6>
+
+                    }
+                </td>
+                <td scope="row">@item.Id</td>
                 <td>@item.Name</td>
                 <td>@item.Age</td>
                 <td>@item.Kilograms</td>
@@ -31,11 +46,8 @@
 
                 <td>
                     <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@item.Id">Delete </a>
-                    <a class="btn btn-info" asp-controller="Animal" asp-action="GetById" asp-route-id="@item.Id">Check </a>
-
-                </td>
-                
-
+                    <a class="btn btn-info" asp-controller="Animal" asp-action="GetById" asp-route-id="@item.Id">Check </a>                  
+                </td>              
             </tr>
         </tbody>
     }

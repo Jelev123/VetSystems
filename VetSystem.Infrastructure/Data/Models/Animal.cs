@@ -12,6 +12,8 @@
 
         public int Kilograms { get; set; }
 
+        public bool IsHealed { get; set; }
+
         public int? OwnerId { get; set; }
 
         public Owner? Owner { get; set; }
