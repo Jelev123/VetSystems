@@ -2,61 +2,92 @@
 @model IEnumerable<AllAnimalViewModel>
 
 
+@if (Model != null)
+{
+    <h3>@Model.Count(): Animals Found</h3>
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th scope="col">Status</th>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Kilograms</th>
+                <th scope="col">Breed</th>
+                <th scope="col">Disease</th>
+                <th scope="col">Medicament</th>
+                <th scope="col">Owner</th>
+                <th></th>
+
+            </tr>
+        </thead>
 
 
-<table class="table">
+        <tbody>
 
-    <thead>
-        <tr>
-            <th scope="col">Status</th>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">Kilograms</th>
-            <th scope="col">Breed</th>
-            <th scope="col">Disease</th>
-            <th scope="col">Medicament</th>
-            <th scope="col">Owner</th>
-            <th></th>
-
-        </tr>
-    </thead>
+            @foreach (var item in Model)
+            {
 
 
-    <tbody>
+                <tr>
+                    <td>
+                        @if (item.IsHealed == true)
+                        {
+                            <h6 style="color: green">Healed</h6>
+                        }
+                        @if (item.IsHealed == false)
+                        {
+                            <h6 style="color: red">In treatment</h6>
 
-        @foreach (var item in Model)
-        {
-            
-    
-        <tr>
-            <td>
-                    @if (item.IsHealed == true)
-                {
-                    <h6 style="color: green">Healed</h6>
-                }
-                    @if (item.IsHealed == false)
-                {
-                    <h6 style="color: red">In treatment</h6>
+                        }
+                    </td>
+                    <td scope="row">@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Age</td>
+                    <td>@item.Kilograms</td>
+                    <td>@item.BreedName</td>
+                    <td>@item.DiseaseName</td>
+                    <td>@item.MedicationName</td>
+                    <td>@item.OwnerFirstName @item.OwnerLastName</td>
 
-                }
-            </td>
-                <td scope="row">@item.Id</td>
-                <td>@item.Name</td>
-                <td>@item.Age</td>
-                <td>@item.Kilograms</td>
-                <td>@item.BreedName</td>
-                <td>@item.DiseaseName</td>
-                <td>@item.MedicationName</td>
-                <td>@item.OwnerFirstName @item.OwnerLastName</td>
+                    <td>
+                        <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@item.Id">Delete </a>
+                        <a class="btn btn-info" asp-controller="Animal" asp-action="GetById" asp-route-id="@item.Id">Check </a>
+                    </td>
+                </tr>
 
-            <td>
-                    <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@item.Id">Delete </a>
-                    <a class="btn btn-info" asp-controller="Animal" asp-action="GetById" asp-route-id="@item.Id">Check </a>
-            </td>
-        </tr>
+            }
+        </tbody>
 
-        }
-    </tbody>
+    </table>
+}
+@if (Model == null)
+{
+    <form method="get" asp-action="Search" asp-controller="Search">
+        <input type="search" value="@ViewData["searchAnimal"]" name="searchName" style="width:300px" placeholder="search by (animal name)" />
+        <a asp-action="Search"></a>
+    </form>
+    <table class="table">
 
-</table>
+        <thead>
+            <tr>
+                <th scope="col">Status</th>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Kilograms</th>
+                <th scope="col">Breed</th>
+                <th scope="col">Disease</th>
+                <th scope="col">Medicament</th>
+                <th scope="col">Owner</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <h2 style="color:red">No Animal Found </h2>
+    </table>
+
+}
+
+

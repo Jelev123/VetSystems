@@ -1,18 +1,17 @@
 ﻿@using VetSystem.Core.ViewModels.Animal
 @model IEnumerable<AllAnimalViewModel>
 
-    @{
-        ViewData["Title"] = "AllAnimals";
-    }
+@{
+    ViewData["Title"] = "AllAnimals";
+}
 
-   <form method="get" asp-action="Search" asp-controller="Search">
 
-     <input type="search" value="@ViewData["searchAnimal"]" name="searchName" style="width:300px" placeholder="search by (animal name)"/>
-      <input type="submit" value="Search" class="btn "/>
-      <a asp-action="Search"></a>
-    </form>
+<form method="get" asp-action="Search" asp-controller="Search">
+    <input type="search" value="@ViewData["searchAnimal"]" name="searchName" style="width:300px" placeholder="search by (animal name)" />
+    @*<input type="submit" value="Search" class="btn "/>*@
+    <a asp-action="Search"></a>
+</form>
 
-<div <style></div>
 <table class="table">
     <thead>
         <tr>
@@ -32,9 +31,9 @@
     </thead>
     @foreach (var item in Model)
     {
-        
+
         <tbody>
-           
+
             <tr>
                 <td>
                     @if (@item.IsHealed == true)
@@ -58,8 +57,8 @@
 
                 <td>
                     <a class="btn btn-danger" asp-controller="Animal" asp-action="DeleteAnimal" asp-route-id="@item.Id">Delete </a>
-                    <a class="btn btn-info" asp-controller="Animal" asp-action="GetById" asp-route-id="@item.Id">Check </a>                  
-                </td>              
+                    <a class="btn btn-info" asp-controller="Animal" asp-action="GetById" asp-route-id="@item.Id">Check </a>
+                </td>
             </tr>
         </tbody>
     }
