@@ -1,8 +1,18 @@
 ﻿@using VetSystem.Core.ViewModels.Animal
 @model IEnumerable<AllAnimalViewModel>
 
+    @{
+        ViewData["Title"] = "AllAnimals";
+    }
 
-<div style="background-image: url("~/Images/285171-1600x1066-american-staffordshire-terrier.jpg")></div>
+   <form method="get" asp-action="Search" asp-controller="Search">
+
+     <input type="search" value="@ViewData["searchAnimal"]" name="searchName" style="width:300px" placeholder="search by (animal name)"/>
+      <input type="submit" value="Search" class="btn "/>
+      <a asp-action="Search"></a>
+    </form>
+
+<div <style></div>
 <table class="table">
     <thead>
         <tr>

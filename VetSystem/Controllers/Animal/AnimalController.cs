@@ -1,6 +1,7 @@
 ﻿namespace VetSystem.Controllers.Animal
 {
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
     using System.Security.AccessControl;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Animal;
@@ -17,14 +18,16 @@
         private readonly IDisieseService disieseService;
         private readonly IOwnerService ownerService;
         private readonly IMedicationService medicationService;
+        private readonly ApplicationDbContext data;
 
-        public AnimalController(IAnimalService animalService, IBreedService breedService, IDisieseService disieseService, IOwnerService ownerService, IMedicationService medicationService)
+        public AnimalController(IAnimalService animalService, IBreedService breedService, IDisieseService disieseService, IOwnerService ownerService, IMedicationService medicationService, ApplicationDbContext data)
         {
             this.animalService = animalService;
             this.breedService = breedService;
             this.disieseService = disieseService;
             this.ownerService = ownerService;
             this.medicationService = medicationService;
+            this.data = data;
         }
 
 

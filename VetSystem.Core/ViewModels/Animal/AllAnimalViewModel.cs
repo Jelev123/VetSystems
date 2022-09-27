@@ -30,5 +30,7 @@
         public string? MedicationName { get; set; }
 
         public bool IsHealed { get; set; }
+
+        public string SearchName { get; set; }
     }
 }

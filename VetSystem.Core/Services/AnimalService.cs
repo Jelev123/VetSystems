@@ -110,6 +110,6 @@
             var animal = this.data.Animals.FirstOrDefault(s => s.Id == id);
             animal.IsHealed = true;
             data.SaveChanges();
-        }
+        }      
     }
 }

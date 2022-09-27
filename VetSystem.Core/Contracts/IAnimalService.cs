@@ -15,5 +15,6 @@
         AllAnimalViewModel GetById<T>(int id);
 
         IEnumerable<AllAnimalViewModel> AllAnimals<T>();
+
     }
 }

@@ -25,6 +25,7 @@ builder.Services.AddTransient<IDiseaseCategoryService, DiseaseCategoryService>()
 builder.Services.AddTransient<IOwnerService, OwnerService>();
 builder.Services.AddTransient<IMedicationService, MedicationService>();
 builder.Services.AddTransient<IMedicationCategoryService, MedicationCategoryService>();
+builder.Services.AddTransient<ISearchService, SearchService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
