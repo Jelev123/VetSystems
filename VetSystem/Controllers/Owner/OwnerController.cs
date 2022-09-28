@@ -13,13 +13,13 @@
             this.ownerService = ownerService;
         }
 
-        public IActionResult AddOwner()
+        public IActionResult CreateOwner()
         {
             return View(new AddOwnerViewModel());
         }
 
         [HttpPost]
-        public IActionResult AddOwner(AddOwnerViewModel add)
+        public IActionResult CreateOwner(AddOwnerViewModel add)
         {
             var owner = this.ownerService.AddOwner(add);
             return Redirect("/");

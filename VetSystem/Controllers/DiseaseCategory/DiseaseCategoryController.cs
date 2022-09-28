@@ -14,13 +14,13 @@
             this.diseaseCategoryService = diseaseCategoryService;
         }
 
-        public IActionResult Add()
+        public IActionResult CreateDiseaseCategory()
         {
             return this.View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(AddDiseaseCategoryViewModel add)
+        public async Task<IActionResult> CreateDiseaseCategory(AddDiseaseCategoryViewModel add)
         {
             this.diseaseCategoryService.Add(add);
             return this.Redirect("/");

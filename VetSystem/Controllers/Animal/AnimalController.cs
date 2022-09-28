@@ -37,7 +37,7 @@
         }
 
 
-        public IActionResult Add()
+        public IActionResult CreateAnimal()
         {
             var allBreeds = this.breedService.AllBreeds<AllBreedsViewModel>();
             var allDisease = this.disieseService.AllDiseases<AllDiseaseViewModel>();
@@ -80,7 +80,7 @@
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(AddAnimalViewModel addAnimal)
+        public async Task<IActionResult> CreateAnimal(AddAnimalViewModel addAnimal)
         {
             var add = this.animalService.AddAnimal(addAnimal);
             return this.Redirect("/");

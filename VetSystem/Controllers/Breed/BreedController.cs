@@ -13,14 +13,14 @@
             this.breedService = breedService;
         }
 
-        public IActionResult Add()
+        public IActionResult CreateBreed()
         {
             var view = new AddBreedViewModel();
             return this.View(view);
         }
 
         [HttpPost]
-        public IActionResult Add(AddBreedViewModel addBreed)
+        public IActionResult CreateBreed(AddBreedViewModel addBreed)
         {
             this.breedService.AddBreed(addBreed);
 

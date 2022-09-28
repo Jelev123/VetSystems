@@ -17,7 +17,7 @@
         }
 
 
-        public IActionResult AddMedication()
+        public IActionResult CreateMedication()
         {
             var allMedCategories = this.medicationCategoryService.AllMedCategories<AddMedicationCategoryViewModel>();
 
@@ -30,7 +30,7 @@
         }
 
         [HttpPost]
-        public IActionResult AddMedication(AddMedicatonViewModel add)
+        public IActionResult CreateMedication(AddMedicatonViewModel add)
         {
             this.medicationService.AddMedicament(add);
             return this.Redirect("/");

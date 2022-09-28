@@ -19,12 +19,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Animal/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEFkZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Animal/AllAnimals.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEFsbEFuaW1hbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Animal/CreateAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXENyZWF0ZUFuaW1hbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Animal/EditAnimal.cshtml]
@@ -35,20 +35,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEdldEJ5SWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Breed/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJlZWRcQWRkLmNzaHRtbA==
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Breed/CreateBreed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJlZWRcQ3JlYXRlQnJlZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Category/CreateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/DiseaseCategory/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZUNhdGVnb3J5XEFkZC5jc2h0bWw=
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/DiseaseCategory/CreateDiseaseCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZUNhdGVnb3J5XENyZWF0ZURpc2Vhc2VDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Disease/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZVxBZGQuY3NodG1s
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Disease/CreateDisease.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZVxDcmVhdGVEaXNlYXNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Home/Index.cshtml]
@@ -59,16 +59,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/MedicationCategory/AddMedCategory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhdGlvbkNhdGVnb3J5XEFkZE1lZENhdGVnb3J5LmNzaHRtbA==
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/MedicationCategory/CreateMedicationCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhdGlvbkNhdGVnb3J5XENyZWF0ZU1lZGljYXRpb25DYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Medication/AddMedication.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhdGlvblxBZGRNZWRpY2F0aW9uLmNzaHRtbA==
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Medication/CreateMedication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhdGlvblxDcmVhdGVNZWRpY2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Owner/AddOwner.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcQWRkT3duZXIuY3NodG1s
+[C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Owner/CreateOwner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcQ3JlYXRlT3duZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zzhelev/source/repos/Vet/VetSystem/VetSystem/Views/Search/Search.cshtml]

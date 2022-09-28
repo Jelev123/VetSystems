@@ -13,14 +13,14 @@
             this.medCategoryService = medCategoryService;
         }
 
-        public IActionResult AddMedCategory()
+        public IActionResult CreateMedicationCategory()
         {
             return this.View();
         }
 
 
         [HttpPost]
-        public IActionResult AddMedCategory(AddMedicationCategoryViewModel addMedCategory)
+        public IActionResult CreateMedicationCategory(AddMedicationCategoryViewModel addMedCategory)
         {
             this.medCategoryService.AddMedicationCategory(addMedCategory);
             return this.Redirect("/");

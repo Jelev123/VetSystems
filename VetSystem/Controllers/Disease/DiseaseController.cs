@@ -18,7 +18,7 @@
         }
 
 
-        public IActionResult Add()
+        public IActionResult CreateDisease()
         {
             var allDiseaseCategory = this.categoryService.AllDiseaseCategories<AllDiseaseCategories>();
 
@@ -31,7 +31,7 @@
         }
 
         [HttpPost]
-        public IActionResult Add(AddDisieseViewModel model)
+        public IActionResult CreateDisease(AddDisieseViewModel model)
         {
             var add =this.disieseService.AddDisiese(model);
             return this.Redirect("/");
