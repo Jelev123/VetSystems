@@ -22,7 +22,7 @@
         [HttpPost]
         public IActionResult CreateBreed(AddBreedViewModel addBreed)
         {
-            this.breedService.AddBreed(addBreed);
+            this.breedService.CreateBreed(addBreed);
 
             return this.Redirect("/");
         }

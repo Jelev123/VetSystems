@@ -21,7 +21,7 @@
         [HttpPost]
         public IActionResult CreateOwner(AddOwnerViewModel add)
         {
-            var owner = this.ownerService.AddOwner(add);
+            var owner = this.ownerService.CreateOwner(add);
             return Redirect("/");
         }
     }

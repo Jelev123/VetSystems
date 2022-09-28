@@ -4,7 +4,7 @@
 
     public interface IBreedService
     {
-        Task AddBreed(AddBreedViewModel addBreed);
+        Task CreateBreed(AddBreedViewModel addBreed);
 
         IEnumerable<AllBreedsViewModel> AllBreeds<T>();
     }

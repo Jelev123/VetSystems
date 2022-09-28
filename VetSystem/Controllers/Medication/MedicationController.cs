@@ -19,7 +19,7 @@
 
         public IActionResult CreateMedication()
         {
-            var allMedCategories = this.medicationCategoryService.AllMedCategories<AddMedicationCategoryViewModel>();
+            var allMedCategories = this.medicationCategoryService.AllMedicationCategories<AddMedicationCategoryViewModel>();
 
             this.ViewData["medCategories"] = allMedCategories.Select(s => new AddMedicatonViewModel
             {
@@ -32,7 +32,7 @@
         [HttpPost]
         public IActionResult CreateMedication(AddMedicatonViewModel add)
         {
-            this.medicationService.AddMedicament(add);
+            this.medicationService.CreateMedication(add);
             return this.Redirect("/");
         }
     }

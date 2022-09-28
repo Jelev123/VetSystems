@@ -18,7 +18,7 @@
             this.data = data;
         }
 
-        public async Task AddBreed(AddBreedViewModel addBreed)
+        public async Task CreateBreed(AddBreedViewModel addBreed)
         {
             var breed = new Breed
             {

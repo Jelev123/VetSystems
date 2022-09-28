@@ -33,7 +33,7 @@
         [HttpPost]
         public IActionResult CreateDisease(AddDisieseViewModel model)
         {
-            var add =this.disieseService.AddDisiese(model);
+            var add =this.disieseService.CreateDisease(model);
             return this.Redirect("/");
         }
     }

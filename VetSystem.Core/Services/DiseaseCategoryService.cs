@@ -16,7 +16,7 @@
             this.data = data;
         }
 
-        public async Task Add(AddDiseaseCategoryViewModel add)
+        public Task CreateDiseaseCategory(AddDiseaseCategoryViewModel add)
         {
             var diseaseCategory = new DiseaseCategory
             {
@@ -25,6 +25,7 @@
 
             data.Add(diseaseCategory);
             data.SaveChanges();
+            return Task.CompletedTask;
         }
 
         public IEnumerable<AllDiseaseCategories> AllDiseaseCategories<T>()

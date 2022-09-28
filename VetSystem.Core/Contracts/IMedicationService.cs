@@ -4,7 +4,7 @@
 
     public interface IMedicationService
     {
-        Task AddMedicament(AddMedicatonViewModel addMedications);
+        Task CreateMedication(AddMedicatonViewModel addMedications);
 
         IEnumerable<AddMedicatonViewModel> AllMedication<T>();
     }

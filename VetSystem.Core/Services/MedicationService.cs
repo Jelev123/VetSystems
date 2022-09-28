@@ -17,7 +17,7 @@
             this.data = data;
         }
 
-        public Task AddMedicament(AddMedicatonViewModel addMedications)
+        public Task CreateMedication(AddMedicatonViewModel addMedications)
         {
             var medCategories = this.data.MedicationCategories.FirstOrDefault(s => s.Name == addMedications.MedicationCategoryName);
             var medication = new Medication

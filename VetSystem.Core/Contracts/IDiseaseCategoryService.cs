@@ -5,7 +5,7 @@
 
     public interface IDiseaseCategoryService
     {
-        Task Add(AddDiseaseCategoryViewModel add);
+        Task CreateDiseaseCategory(AddDiseaseCategoryViewModel add);
 
         IEnumerable<AllDiseaseCategories> AllDiseaseCategories<T>();
 

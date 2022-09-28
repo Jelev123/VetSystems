@@ -16,7 +16,7 @@
             this.data = data;
         }
 
-        public async Task AddOwner(AddOwnerViewModel add)
+        public Task CreateOwner(AddOwnerViewModel add)
         {
             var owner = new Owner
             {
@@ -27,6 +27,7 @@
 
             data.Add(owner);
             data.SaveChanges();
+            return Task.CompletedTask;
         }
 
         public IEnumerable<AllOwnersViewModel> AllOwners<T>()

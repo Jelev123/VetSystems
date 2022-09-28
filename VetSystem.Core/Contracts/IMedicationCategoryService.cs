@@ -4,8 +4,8 @@
 
     public interface IMedicationCategoryService
     {
-        Task AddMedicationCategory(AddMedicationCategoryViewModel addMedicationCategory);
+        Task CreateMedicationCategory(AddMedicationCategoryViewModel addMedicationCategory);
 
-        IEnumerable<AddMedicationCategoryViewModel> AllMedCategories<T>();
+        IEnumerable<AddMedicationCategoryViewModel> AllMedicationCategories<T>();
     }
 }

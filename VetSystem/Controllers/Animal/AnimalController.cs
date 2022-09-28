@@ -1,8 +1,6 @@
 ﻿namespace VetSystem.Controllers.Animal
 {
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore;
-    using System.Security.AccessControl;
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Animal;
     using VetSystem.Core.ViewModels.Breed;
@@ -20,19 +18,17 @@
         private readonly IOwnerService ownerService;
         private readonly IMedicationService medicationService;
         private readonly ICategoryService categoryService;
-        private readonly ApplicationDbContext data;
 
         public AnimalController(IAnimalService animalService, IBreedService breedService,
             IDisieseService disieseService, IOwnerService ownerService,
             IMedicationService medicationService,
-            ApplicationDbContext data, ICategoryService categoryService)
+            ICategoryService categoryService)
         {
             this.animalService = animalService;
             this.breedService = breedService;
             this.disieseService = disieseService;
             this.ownerService = ownerService;
             this.medicationService = medicationService;
-            this.data = data;
             this.categoryService = categoryService;
         }
 
@@ -57,7 +53,7 @@
 
             this.ViewData["ownerFirstName"] = allOwners.Select(s => new AddAnimalViewModel
             {
-               OwnerFirstName = s.FirstName,
+                OwnerFirstName = s.FirstName,
             }).ToList();
 
             this.ViewData["ownerLastName"] = allOwners.Select(s => new AddAnimalViewModel
@@ -67,7 +63,7 @@
 
             this.ViewData["medication"] = allMedication.Select(s => new AddAnimalViewModel
             {
-               MedicationName = s.Name
+                MedicationName = s.Name
             }).ToList();
 
 
@@ -113,7 +109,7 @@
         [HttpPost]
         public IActionResult EditAnimal(EditAnimalViewModel model, int id)
         {
-            var animal = this.animalService.EditAnimal(model,id);
+            var animal = this.animalService.EditAnimal(model, id);
             return this.Redirect("/");
         }
 

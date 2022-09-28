@@ -4,7 +4,7 @@
 
     public interface IOwnerService
     {
-        Task AddOwner(AddOwnerViewModel add);
+        Task CreateOwner(AddOwnerViewModel add);
         IEnumerable<AllOwnersViewModel> AllOwners<T>();
     }
 }

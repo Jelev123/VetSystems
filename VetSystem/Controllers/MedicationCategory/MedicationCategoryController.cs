@@ -22,13 +22,13 @@
         [HttpPost]
         public IActionResult CreateMedicationCategory(AddMedicationCategoryViewModel addMedCategory)
         {
-            this.medCategoryService.AddMedicationCategory(addMedCategory);
+            this.medCategoryService.CreateMedicationCategory(addMedCategory);
             return this.Redirect("/");
         }
 
         public IActionResult AllMedCategories()
         {
-            var all = this.medCategoryService.AllMedCategories<AddMedicationCategoryViewModel>();
+            var all = this.medCategoryService.AllMedicationCategories<AddMedicationCategoryViewModel>();
             return this.View(all);
         }
     }

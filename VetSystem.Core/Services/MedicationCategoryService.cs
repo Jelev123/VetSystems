@@ -16,7 +16,7 @@
             this.data = data;
         }
 
-        public Task AddMedicationCategory(AddMedicationCategoryViewModel addMedicationCategory)
+        public Task CreateMedicationCategory(AddMedicationCategoryViewModel addMedicationCategory)
         {
             var medCategory = new MedicationCategory
             {
@@ -28,7 +28,7 @@
             return Task.CompletedTask;
         }
 
-        public IEnumerable<AddMedicationCategoryViewModel> AllMedCategories<T>()
+        public IEnumerable<AddMedicationCategoryViewModel> AllMedicationCategories<T>()
         {
             var all = this.data.MedicationCategories
                 .Select(s => new AddMedicationCategoryViewModel

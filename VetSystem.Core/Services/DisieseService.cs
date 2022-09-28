@@ -16,7 +16,7 @@
             this.data = data;
         }
 
-        public Task AddDisiese(AddDisieseViewModel add)
+        public Task CreateDisease(AddDisieseViewModel add)
         {
             var diseaseCategory = data.DiseaseCategories.FirstOrDefault(s => s.Name == add.DiseaceCategoryName);
 

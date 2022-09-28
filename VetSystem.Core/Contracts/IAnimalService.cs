@@ -9,12 +9,12 @@
         Task DeleteAnimal(DeleteAnimalViewModel model);
 
         Task EditAnimal(EditAnimalViewModel model, int id);
+        IEnumerable<AllAnimalViewModel> AllAnimals<T>();
 
         Task Heal(int id);
 
         AllAnimalViewModel GetById<T>(int id);
 
-        IEnumerable<AllAnimalViewModel> AllAnimals<T>();
 
     }
 }
