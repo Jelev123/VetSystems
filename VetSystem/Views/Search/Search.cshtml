@@ -1,8 +1,13 @@
 ﻿@using VetSystem.Core.ViewModels.Animal
 @model IEnumerable<AllAnimalViewModel>
 
+<form method="get" asp-action="Search" asp-controller="Search">
+    <input type="search" value="@ViewData["searchAnimal"]" name="searchName" style="width:300px" placeholder="search by (animal name)" />
+    @*<input type="submit" value="Search" class="btn "/>*@
+    <a asp-action="Search"></a>
+</form>
 
-@if (Model != null)
+@if (Model != null && Model.Count() > 0)
 {
     <h3>@Model.Count(): Animals Found</h3>
     <table class="table">
@@ -62,7 +67,7 @@
 
     </table>
 }
-@if (Model == null)
+@if (Model == null || Model.Count() == 0)
 {
     <form method="get" asp-action="Search" asp-controller="Search">
         <input type="search" value="@ViewData["searchAnimal"]" name="searchName" style="width:300px" placeholder="search by (animal name)" />
@@ -89,5 +94,6 @@
     </table>
 
 }
+
 
 
