@@ -6,6 +6,7 @@
     using VetSystem.Core.Contracts;
     using VetSystem.Core.ViewModels.Animal;
     using VetSystem.Core.ViewModels.Breed;
+    using VetSystem.Core.ViewModels.Category;
     using VetSystem.Core.ViewModels.Disiese;
     using VetSystem.Core.ViewModels.Medicament;
     using VetSystem.Core.ViewModels.Owner;
@@ -18,9 +19,13 @@
         private readonly IDisieseService disieseService;
         private readonly IOwnerService ownerService;
         private readonly IMedicationService medicationService;
+        private readonly ICategoryService categoryService;
         private readonly ApplicationDbContext data;
 
-        public AnimalController(IAnimalService animalService, IBreedService breedService, IDisieseService disieseService, IOwnerService ownerService, IMedicationService medicationService, ApplicationDbContext data)
+        public AnimalController(IAnimalService animalService, IBreedService breedService,
+            IDisieseService disieseService, IOwnerService ownerService,
+            IMedicationService medicationService,
+            ApplicationDbContext data, ICategoryService categoryService)
         {
             this.animalService = animalService;
             this.breedService = breedService;
@@ -28,6 +33,7 @@
             this.ownerService = ownerService;
             this.medicationService = medicationService;
             this.data = data;
+            this.categoryService = categoryService;
         }
 
 
@@ -35,8 +41,9 @@
         {
             var allBreeds = this.breedService.AllBreeds<AllBreedsViewModel>();
             var allDisease = this.disieseService.AllDiseases<AllDiseaseViewModel>();
-            var allOwners = this.ownerService.GetAll<AllOwnersViewModel>();
+            var allOwners = this.ownerService.AllOwners<AllOwnersViewModel>();
             var allMedication = this.medicationService.AllMedication<AddMedicatonViewModel>();
+            var allCategories = this.categoryService.GetAllCategories<AllCategoryViewModel>();
 
             this.ViewData["breeds"] = allBreeds.Select(s => new AddAnimalViewModel
             {
@@ -61,6 +68,12 @@
             this.ViewData["medication"] = allMedication.Select(s => new AddAnimalViewModel
             {
                MedicationName = s.Name
+            }).ToList();
+
+
+            this.ViewData["categories"] = allCategories.Select(s => new AddAnimalViewModel
+            {
+                CategoryName = s.Name,
             }).ToList();
 
             return this.View();

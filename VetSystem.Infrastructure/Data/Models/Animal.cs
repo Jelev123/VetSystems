@@ -1,6 +1,7 @@
 ﻿namespace VetSystem.Infrastucture.Data.Models
 {
     using System.ComponentModel.DataAnnotations.Schema;
+    using VetSystem.Infrastructure.Data.Models;
 
     public class Animal
     {
@@ -29,5 +30,9 @@
         public int? MedicationId { get; set; }
 
         public Medication? Medication { get; set; }
+
+        public int CategoryId { get; set; }
+
+        public Category? Category { get; set; }
     }
 }

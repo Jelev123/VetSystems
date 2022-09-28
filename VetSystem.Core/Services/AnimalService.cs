@@ -22,11 +22,13 @@
             var disease = data.Diseases.FirstOrDefault(s => s.Name == addAnimal.DiseaseName);
             var owner = data.Owners.FirstOrDefault(s => s.FirstName == addAnimal.OwnerFirstName);
             var medication = data.Medications.FirstOrDefault(s => s.Name == addAnimal.MedicationName);
+            var category = data.Categories.FirstOrDefault(s => s.Name == addAnimal.CategoryName);
             var animal = new Animal
             {
                 Name = addAnimal.Name,
                 Age = addAnimal.Age,
                 Kilograms = addAnimal.Kilograms,
+                Category = category,
                 Breed = breed,
                 BreedId = breed.Id,
                 Diseases = disease,
@@ -51,6 +53,7 @@
                     Name = s.Name,
                     Age = s.Age,
                     Kilograms = s.Kilograms,
+                    CategoryName = s.Category.Name,
                     BreedName = s.Breed.Name,
                     DiseaseName = s.Diseases.Name,
                     MedicationName = s.Medication.Name,
@@ -93,6 +96,7 @@
                     Name = s.Name,
                     Age = s.Age,
                     Kilograms = s.Kilograms,
+                    CategoryName = s.Category.Name,
                     BreedName = s.Breed.Name,
                     DiseaseName = s.Diseases.Name,
                     MedicationName = s.Medication.Name,

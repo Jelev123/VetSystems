@@ -6,7 +6,9 @@
     public class AddAnimalViewModel
     {     
         public string Name { get; set; }
-        
+
+        public string CategoryName { get; set; }
+
         public int Age { get; set; }
 
         public int Kilograms { get; set; }

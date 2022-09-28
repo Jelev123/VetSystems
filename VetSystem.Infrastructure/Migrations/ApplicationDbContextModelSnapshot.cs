@@ -224,6 +224,22 @@ namespace VetSystem.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("VetSystem.Infrastructure.Data.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("VetSystem.Infrastucture.Data.Models.Animal", b =>
                 {
                     b.Property<int>("Id")
@@ -236,6 +252,9 @@ namespace VetSystem.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("BreedId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<int?>("DiseaseId")
@@ -260,6 +279,8 @@ namespace VetSystem.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BreedId");
+
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("DiseaseId");
 
@@ -445,6 +466,12 @@ namespace VetSystem.Infrastructure.Migrations
                         .WithMany("Animals")
                         .HasForeignKey("BreedId");
 
+                    b.HasOne("VetSystem.Infrastructure.Data.Models.Category", "Category")
+                        .WithMany("Animals")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("VetSystem.Infrastucture.Data.Models.Disease", "Diseases")
                         .WithMany("Animals")
                         .HasForeignKey("DiseaseId");
@@ -458,6 +485,8 @@ namespace VetSystem.Infrastructure.Migrations
                         .HasForeignKey("OwnerId");
 
                     b.Navigation("Breed");
+
+                    b.Navigation("Category");
 
                     b.Navigation("Diseases");
 
@@ -486,6 +515,11 @@ namespace VetSystem.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("MedicationsCategory");
+                });
+
+            modelBuilder.Entity("VetSystem.Infrastructure.Data.Models.Category", b =>
+                {
+                    b.Navigation("Animals");
                 });
 
             modelBuilder.Entity("VetSystem.Infrastucture.Data.Models.Breed", b =>

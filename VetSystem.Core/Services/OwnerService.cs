@@ -29,7 +29,7 @@
             data.SaveChanges();
         }
 
-        public IEnumerable<AllOwnersViewModel> GetAll<T>()
+        public IEnumerable<AllOwnersViewModel> AllOwners<T>()
         {
             return this.data.Owners
                 .Select(s => new AllOwnersViewModel

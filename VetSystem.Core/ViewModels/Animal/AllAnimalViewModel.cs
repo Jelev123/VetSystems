@@ -12,6 +12,9 @@
 
         public int Kilograms { get; set; }
 
+        [Display(Name = "Category")]
+        public string CategoryName { get; set; }
+
         [Display(Name = "Breed")]
         public string? BreedName { get; set; }
 

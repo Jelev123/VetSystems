@@ -5,8 +5,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VetSystem.Infrastructure.Migrations
 {
-    public partial class ssss : Migration
+    /// <inheritdoc />
+    public partial class categoryModel232sad : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -62,16 +64,16 @@ namespace VetSystem.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Clinics",
+                name: "Categories",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clinics", x => x.Id);
+                    table.PrimaryKey("PK_Categories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -85,6 +87,34 @@ namespace VetSystem.Infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_DiseaseCategories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MedicationCategories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MedicationCategories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Owners",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Owners", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -194,46 +224,6 @@ namespace VetSystem.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MedicationCategories",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ClinicId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_MedicationCategories", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_MedicationCategories_Clinics_ClinicId",
-                        column: x => x.ClinicId,
-                        principalTable: "Clinics",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Owners",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<int>(type: "int", nullable: false),
-                    ClinicId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Owners", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Owners_Clinics_ClinicId",
-                        column: x => x.ClinicId,
-                        principalTable: "Clinics",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Diseases",
                 columns: table => new
                 {
@@ -260,17 +250,11 @@ namespace VetSystem.Infrastructure.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MedicationsCategoryId = table.Column<int>(type: "int", nullable: false),
-                    ClinicId = table.Column<int>(type: "int", nullable: true)
+                    MedicationsCategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Medications", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Medications_Clinics_ClinicId",
-                        column: x => x.ClinicId,
-                        principalTable: "Clinics",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Medications_MedicationCategories_MedicationsCategoryId",
                         column: x => x.MedicationsCategoryId,
@@ -288,11 +272,12 @@ namespace VetSystem.Infrastructure.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),
                     Kilograms = table.Column<int>(type: "int", nullable: false),
-                    OwnerId = table.Column<int>(type: "int", nullable: false),
-                    BreedId = table.Column<int>(type: "int", nullable: false),
-                    DiseaseId = table.Column<int>(type: "int", nullable: false),
-                    ClinicId = table.Column<int>(type: "int", nullable: true),
-                    MedicationId = table.Column<int>(type: "int", nullable: true)
+                    IsHealed = table.Column<bool>(type: "bit", nullable: false),
+                    OwnerId = table.Column<int>(type: "int", nullable: true),
+                    BreedId = table.Column<int>(type: "int", nullable: true),
+                    DiseaseId = table.Column<int>(type: "int", nullable: true),
+                    MedicationId = table.Column<int>(type: "int", nullable: true),
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -301,19 +286,18 @@ namespace VetSystem.Infrastructure.Migrations
                         name: "FK_Animals_Breeds_BreedId",
                         column: x => x.BreedId,
                         principalTable: "Breeds",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Animals_Categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Animals_Clinics_ClinicId",
-                        column: x => x.ClinicId,
-                        principalTable: "Clinics",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Animals_Diseases_DiseaseId",
                         column: x => x.DiseaseId,
                         principalTable: "Diseases",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Animals_Medications_MedicationId",
                         column: x => x.MedicationId,
@@ -323,8 +307,7 @@ namespace VetSystem.Infrastructure.Migrations
                         name: "FK_Animals_Owners_OwnerId",
                         column: x => x.OwnerId,
                         principalTable: "Owners",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -333,9 +316,9 @@ namespace VetSystem.Infrastructure.Migrations
                 column: "BreedId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Animals_ClinicId",
+                name: "IX_Animals_CategoryId",
                 table: "Animals",
-                column: "ClinicId");
+                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Animals_DiseaseId",
@@ -397,26 +380,12 @@ namespace VetSystem.Infrastructure.Migrations
                 column: "DiseaseCategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MedicationCategories_ClinicId",
-                table: "MedicationCategories",
-                column: "ClinicId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Medications_ClinicId",
-                table: "Medications",
-                column: "ClinicId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Medications_MedicationsCategoryId",
                 table: "Medications",
                 column: "MedicationsCategoryId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Owners_ClinicId",
-                table: "Owners",
-                column: "ClinicId");
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
@@ -441,6 +410,9 @@ namespace VetSystem.Infrastructure.Migrations
                 name: "Breeds");
 
             migrationBuilder.DropTable(
+                name: "Categories");
+
+            migrationBuilder.DropTable(
                 name: "Diseases");
 
             migrationBuilder.DropTable(
@@ -460,9 +432,6 @@ namespace VetSystem.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "MedicationCategories");
-
-            migrationBuilder.DropTable(
-                name: "Clinics");
         }
     }
 }
